@@ -1,0 +1,88 @@
+/* ==========================================================================
+   utilities.css — Clases de apoyo de propósito único
+   ========================================================================== */
+
+/* Oculta visualmente pero mantiene el texto para lectores de pantalla */
+.visually-hidden {
+  position: absolute !important;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Enlace "Saltar al contenido" (accesibilidad por teclado) */
+.skip-link {
+  position: fixed;
+  inset-block-start: var(--space-md);
+  inset-inline-start: var(--space-md);
+  z-index: var(--z-toast);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Íconos SVG del sprite */
+.icon {
+  inline-size: var(--icon-md);
+  block-size: var(--icon-md);
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon--sm {
+  inline-size: var(--icon-sm);
+  block-size: var(--icon-sm);
+}
+
+.icon--lg {
+  inline-size: var(--icon-lg);
+  block-size: var(--icon-lg);
+}
+
+/* Contenedor de lista sin estilos */
+.list-reset {
+  list-style: none;
+  padding: 0;
+}
+
+/* Animación controlada al hacer scroll (la activa reveal-on-scroll.js).
+   Se usa animation (no transition) para no interferir con los efectos
+   hover de los componentes una vez revelados. */
+.js-enabled [data-reveal] {
+  opacity: 0;
+}
+
+.js-enabled [data-reveal].is-visible {
+  opacity: 1;
+  animation: reveal var(--duration-slow) var(--ease-out) var(--reveal-delay, 0ms) backwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-lg));
+  }
+}
+
+/* Sprite SVG oculto (los íconos se usan con <use>) */
+.icon-sprite {
+  display: none;
+}

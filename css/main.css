@@ -1,0 +1,12 @@
+/* ==========================================================================
+   main.css — Punto de entrada de estilos
+   Orden: tokens → base → layout → componentes → páginas
+   Cada archivo tiene una única responsabilidad (arquitectura por capas).
+   ========================================================================== */
+
+/* 1. Base: decisiones visuales y estilos globales */
+@import url("base/tokens.css");
+@import url("base/fonts.css");
+@import url("base/reset.css");
+@import url("base/typography.css");
+@import url("base/utilities.css");

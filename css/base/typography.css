@@ -1,0 +1,131 @@
+/* ==========================================================================
+   typography.css — Jerarquía tipográfica
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-tight);
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-3xl);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-xl);
+}
+
+h4,
+.h4 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  max-width: 70ch;
+  text-wrap: pretty;
+}
+
+small {
+  font-size: var(--fs-sm);
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* Enlace de texto estándar */
+.link {
+  color: var(--color-secondary);
+  font-weight: var(--fw-medium);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+/* Texto de apoyo */
+.text-lead {
+  font-size: var(--fs-md);
+  color: var(--color-text-muted);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* Resaltado de palabras clave (como en la referencia) */
+.text-highlight {
+  color: var(--color-accent);
+  font-weight: var(--fw-semibold);
+}
+
+/* Texto con degradado de marca */
+.text-gradient {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Etiqueta superior de sección: "— SOBRE MÍ —" */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.eyebrow::before {
+  content: "";
+  inline-size: var(--space-xl);
+  block-size: var(--border-width);
+  background: currentColor;
+}
+
+@media (max-width: 39.99rem) {
+  .eyebrow {
+    letter-spacing: 0.2em;
+  }
+}
+
+.eyebrow--center::after {
+  content: "";
+  inline-size: var(--space-xl);
+  block-size: var(--border-width);
+  background: currentColor;
+}
