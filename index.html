@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jose Luis Farias Valdez — Portafolio | Ingeniería de Software</title>
+  <meta name="description" content="Portafolio de Jose Luis Farias Valdez, estudiante de Ingeniería de Software (UNEMI): desarrollo web y backend con Python y Django, bases de datos y visión por computador.">
+  <meta name="author" content="Jose Luis Farias Valdez">
+  <meta name="theme-color" content="#0d0d0f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jose Luis Farias Valdez — Portafolio | Ingeniería de Software">
+  <meta property="og:description" content="Portafolio de Jose Luis Farias Valdez, estudiante de Ingeniería de Software (UNEMI): desarrollo web y backend con Python y Django, bases de datos y visión por computador.">
+  <meta property="og:image" content="https://0xfarias.github.io/portafolio/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page page--home">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Sprite de íconos: cada ícono se reutiliza con <use> y su id (i-nombre) -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/><path d="m14 4-4 16"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12.5 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M6 8.5v7"/><path d="M18 8.5c0 5-6 5-10.2 8"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-scan-eye" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12s2.2-4 6-4 6 4 6 4-2.2 4-6 4-6-4-6-4Z"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13"/><path d="M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10 14"/><path d="M21 3 14.5 21l-4.5-7-7-4.5L21 3Z"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7-4.7-1.8 4.7-1.8L12 3Z"/><path d="m19 15 .8 2.2 2.2.8-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10.5a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.3 10.1 4 4 0 0 0 7 18Z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 7 5-3 5 3-1.5-7"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15Z"/><path d="M5 19 13 11"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#inicio">
+      <svg class="logo brand__logo" viewBox="0 0 118 58" width="118" height="58" aria-hidden="true" focusable="false"><g class="logo__key"><rect class="logo__side" x="0" y="0" width="56" height="58" rx="12"/><g class="logo__cap"><rect class="logo__top" x="5" y="3" width="46" height="45" rx="9"/><path class="logo__glyph" d="M29 12h8v18a11 11 0 0 1-22 0v-2h8v2a3 3 0 0 0 6 0z"/><rect class="logo__bump" x="37" y="38" width="10" height="3.5" rx="1.2"/></g></g><g class="logo__key"><rect class="logo__side" x="62" y="0" width="56" height="58" rx="12"/><g class="logo__cap"><rect class="logo__top" x="67" y="3" width="46" height="45" rx="9"/><path class="logo__glyph" d="M78 12h21v7.5h-13v5h11v7h-11v9.5h-8z"/><rect class="logo__bump" x="98" y="38" width="10" height="3.5" rx="1.2"/></g></g></svg>
+      <span class="brand__name">Jose Farias</span>
+      <span class="visually-hidden"> — Ir al inicio</span>
+    </a>
+
+    <button class="icon-btn menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <svg class="icon icon--menu" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg>
+      <svg class="icon icon--close" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+    </button>
+
+    <nav class="navbar" id="site-nav" aria-label="Navegación principal">
+      <ul class="navbar__list">
+      <li>
+        <a class="navbar__link is-active" href="#inicio" data-spy="inicio">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"></use></svg></span>
+          <span class="navbar__label">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a class="navbar__link" href="#sobre-mi" data-spy="sobre-mi">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user"></use></svg></span>
+          <span class="navbar__label">Sobre mí</span>
+        </a>
+      </li>
+      <li>
+        <a class="navbar__link" href="#habilidades" data-spy="habilidades">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg></span>
+          <span class="navbar__label">Habilidades</span>
+        </a>
+      </li>
+      <li>
+        <a class="navbar__link" href="#proyectos" data-spy="proyectos">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-briefcase"></use></svg></span>
+          <span class="navbar__label">Proyectos</span>
+        </a>
+      </li>
+      <li>
+        <a class="navbar__link" href="design-system.html">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"></use></svg></span>
+          <span class="navbar__label">Design System</span>
+        </a>
+      </li>
+      <li>
+        <a class="navbar__link" href="#contacto" data-spy="contacto">
+          <span class="navbar__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg></span>
+          <span class="navbar__label">Contacto</span>
+        </a>
+      </li>
+      </ul>
+    </nav>
+
+    <div class="site-header__tools">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar a tema claro">
+        <svg class="icon icon--sun" aria-hidden="true" focusable="false"><use href="#i-sun"></use></svg>
+        <svg class="icon icon--moon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg>
+      </button>
+      <ul class="social-list">
+        <li>
+          <a class="icon-btn icon-btn--sm" href="mailto:jfariasv2@unemi.edu.ec" aria-label="Enviar correo a Jose">
+            <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="icon-btn icon-btn--sm" href="https://github.com/0xFarias" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub (se abre en una pestaña nueva)">
+            <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= INICIO / PRESENTACIÓN ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="status-pill hero__status">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          Abierto a prácticas y proyectos
+        </p>
+
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--center">Ingeniería de Software</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Jose Luis</span>
+            <span class="hero__line">Farias Valdez<span class="hero__dot">.</span></span>
+          </h1>
+          <p class="hero__tagline">
+            Desarrollo <span class="text-highlight">sistemas web</span> con Python y Django y aplico
+            <span class="text-highlight">visión por computador</span> a problemas reales: atención médica,
+            seguridad vial y cultivos de cacao.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#proyectos">
+              Ver proyectos <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+            </a>
+            <a class="btn btn--secondary" href="#contacto">Contactar</a>
+          </div>
+        </div>
+
+        <figure class="hero__figure">
+          <img class="hero__photo" src="assets/img/avatar.svg" alt="Avatar ilustrado de Jose Luis Farias Valdez" width="480" height="600">
+          <figcaption class="hero__badge">
+            <strong>Ing. de Software</strong>
+            <span>Estudiante · UNEMI</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <a class="hero__scroll" href="#sobre-mi">Desliza</a>
+    </section>
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Sobre mí</p>
+          <h2 id="about-title">Mente <span class="text-gradient">analítica</span>, código con <span class="text-gradient">propósito.</span></h2>
+        </header>
+
+        <div class="about__grid">
+          <article class="about__bio" aria-labelledby="bio-title" data-reveal>
+            <h3 class="about__subtitle" id="bio-title">Perfil profesional</h3>
+            <p>
+              Soy <strong>Jose Luis Farias Valdez</strong>, estudiante de Ingeniería de Software en la
+              Universidad Estatal de Milagro (UNEMI), Ecuador. Tengo conocimientos en desarrollo backend,
+              programación estructurada y orientada a objetos, bases de datos y servicios en la nube.
+            </p>
+            <p>
+              En mis proyectos he construido sistemas web con <strong>Python y Django</strong> para el área de salud
+              y soluciones de <strong>visión por computador</strong>: una plataforma que detecta motociclistas sin
+              casco en video y un analizador de enfermedades en mazorcas de cacao.
+            </p>
+            <p>
+              Aprendo tecnologías nuevas con rapidez y me adapto a distintos tipos de trabajo. Me enfoco en
+              <span class="text-highlight">resolver problemas con lógica y análisis de procesos</span>, comunicarme
+              con claridad y trabajar tanto en equipo como de forma autónoma.
+            </p>
+            <div class="about__actions">
+              <a class="btn btn--secondary btn--sm" href="#habilidades">Ver habilidades <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <aside class="about__aside panel" aria-labelledby="education-title" data-reveal>
+            <h3 class="about__subtitle" id="education-title">Formación y certificaciones</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__icon"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-graduation"></use></svg></span>
+                <div>
+                  <p class="timeline__meta">2023 – actualidad</p>
+                  <p class="timeline__title">Ingeniería de Software</p>
+                  <p class="timeline__text">Universidad Estatal de Milagro (UNEMI), Milagro, Guayas</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__icon"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-award"></use></svg></span>
+                <div>
+                  <p class="timeline__meta">Octubre 2025</p>
+                  <p class="timeline__title">AWS Academy Graduate — Cloud Foundations</p>
+                  <p class="timeline__text"><a class="link" href="https://www.credly.com/go/4g2S7dKG" target="_blank" rel="noopener noreferrer">Ver insignia digital en Credly</a></p>
+                </div>
+              </li>
+            </ol>
+            <h4 class="about__label">Intereses profesionales</h4>
+            <ul class="tag-list">
+              <li class="badge">Desarrollo web y backend</li>
+              <li class="badge">Bases de datos</li>
+              <li class="badge">Visión por computador</li>
+              <li class="badge">Cloud</li>
+              <li class="badge">Optimización de procesos</li>
+            </ul>
+            <h4 class="about__label">Idiomas</h4>
+            <ul class="tag-list">
+              <li class="badge">Español · nativo</li>
+              <li class="badge">Inglés · básico</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="section section--alt" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header section-header--split" data-reveal>
+          <div class="section-header__text">
+            <p class="eyebrow">Stack técnico</p>
+            <h2 id="skills-title">Habilidades</h2>
+            <p>Cada nivel está respaldado por un proyecto o práctica concreta que puedo explicar.</p>
+          </div>
+          <ul class="level-legend">
+            <li>
+              <p class="level" data-level="1">
+                <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="level__label">Básico</span>
+              </p>
+              <span class="level-legend__text">Lo he aplicado en proyectos con guía</span>
+            </li>
+            <li>
+              <p class="level" data-level="2">
+                <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="level__label">Intermedio</span>
+              </p>
+              <span class="level-legend__text">Lo uso de forma autónoma en proyectos</span>
+            </li>
+            <li>
+              <p class="level" data-level="0">
+                <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="level__label">Aprendiendo</span>
+              </p>
+              <span class="level-legend__text">En formación activa</span>
+            </li>
+          </ul>
+        </header>
+
+        <div class="skill-grid">
+          <section class="skill-group" aria-labelledby="skills-backend" data-reveal>
+            <header class="skill-group__header">
+              <span class="skill-group__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-server"></use></svg></span>
+              <h3 class="skill-group__title" id="skills-backend">Backend y programación</h3>
+            </header>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">PY</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">Python</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">DJ</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">Django</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Modelos, vistas, plantillas, sesiones, permisos y CRUD completos (AttentionDoctor y Tracker IA).</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">PHP</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">PHP</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Backend de AgendaValoraciones.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">API</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">FastAPI</h4>
+                    <p class="level" data-level="0">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Aprendiendo</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">API de inferencia de CocoaAnalyzer.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="skills-datos" data-reveal>
+            <header class="skill-group__header">
+              <span class="skill-group__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"></use></svg></span>
+              <h3 class="skill-group__title" id="skills-datos">Bases de datos</h3>
+            </header>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">SQL</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">SQL Server</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Consultas, relaciones entre tablas y diseño de CRUD.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">PG</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">PostgreSQL</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Base de datos de AttentionDoctor, conectada desde Django.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">MY</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">MySQL</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Base de datos de AgendaValoraciones.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="skills-ia" data-reveal>
+            <header class="skill-group__header">
+              <span class="skill-group__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scan-eye"></use></svg></span>
+              <h3 class="skill-group__title" id="skills-ia">IA y visión por computador</h3>
+            </header>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">CV</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">OpenCV</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Captura y procesamiento de video en tiempo real (Tracker IA).</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">YO</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">YOLO (Ultralytics)</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">YOLOv8 en Tracker IA y YOLOv11 en CocoaAnalyzer.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">ML</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">Entrenamiento de modelos</h4>
+                    <p class="level" data-level="0">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Aprendiendo</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Modelo personalizado para detectar el casco y datasets gestionados en Roboflow.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="skills-frontend" data-reveal>
+            <header class="skill-group__header">
+              <span class="skill-group__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layout"></use></svg></span>
+              <h3 class="skill-group__title" id="skills-frontend">Frontend</h3>
+            </header>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">HTML</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">HTML5</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Estructura semántica, formularios y plantillas de Django.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">CSS</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">CSS3</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Flexbox, Grid, custom properties y diseño responsive; Tailwind CSS y Bootstrap.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">JS</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">JavaScript</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">DOM, eventos y validación de formularios.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="skills-cloud" data-reveal>
+            <header class="skill-group__header">
+              <span class="skill-group__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cloud"></use></svg></span>
+              <h3 class="skill-group__title" id="skills-cloud">Cloud y herramientas</h3>
+            </header>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">GIT</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">Git y GitHub</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Control de versiones de mis proyectos y publicación con GitHub Pages.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">AWS</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">AWS</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Certificación AWS Academy Cloud Foundations; Amazon S3 en Tracker IA.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">{ }</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">JSON</h4>
+                    <p class="level" data-level="2">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Intermedio</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Lectura y escritura de datos estructurados entre servicios.</p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">NET</span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">Redes de datos</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc">Fundamentos de redes y comunicación entre equipos.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Trabajo seleccionado</p>
+          <h2 id="projects-title">Proyectos destacados</h2>
+          <p>Proyectos académicos, personales y profesionales. Cada tarjeta resume el problema y el stack; «Ver detalles» abre el caso completo.</p>
+        </header>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar proyectos por tecnología">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Todos <span class="chip__count" data-count></span></button>
+          <button class="chip" type="button" data-filter="python" aria-pressed="false">Python <span class="chip__count" data-count></span></button>
+          <button class="chip" type="button" data-filter="django" aria-pressed="false">Django <span class="chip__count" data-count></span></button>
+          <button class="chip" type="button" data-filter="ia" aria-pressed="false">Visión por computador <span class="chip__count" data-count></span></button>
+          <button class="chip" type="button" data-filter="php" aria-pressed="false">PHP <span class="chip__count" data-count></span></button>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Mostrando todos los proyectos.</p>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="card-project" id="proyecto-attentiondoctor" data-tech="python django postgresql" aria-labelledby="proyecto-attentiondoctor-title" data-reveal>
+            <figure class="card-project__media">
+              <img src="assets/img/projects/attentiondoctor.svg" alt="Interfaz de AttentionDoctor: menú lateral, calendario mensual de citas con estados y panel de atención con signos vitales y el botón «Generar receta»." width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="card-project__body">
+              <p class="card-project__meta">
+                <span class="badge badge--status badge--done">Funcional</span>
+                <span>Web · Salud</span>
+              </p>
+              <h3 class="card-project__title" id="proyecto-attentiondoctor-title">AttentionDoctor: sistema de atención médica</h3>
+              <p class="card-project__desc">Sistema web para consultorios médicos que reúne en una sola interfaz los pacientes, la historia clínica, la agenda de citas, las atenciones, los servicios y los pagos.</p>
+              <dl class="card-project__problem">
+                <dt>Problema que resuelve</dt>
+                <dd>En un consultorio la información suele quedar repartida entre fichas en papel, agendas y hojas de cálculo, lo que complica el seguimiento de cada paciente y la coordinación entre el médico y su asistente.</dd>
+              </dl>
+              <ul class="tag-list">
+                <li class="badge">Python</li>
+                <li class="badge">Django</li>
+                <li class="badge">PostgreSQL</li>
+                <li class="badge">Tailwind CSS</li>
+                <li class="badge">JavaScript</li>
+              </ul>
+            </div>
+            <footer class="card-project__actions">
+              <button class="btn btn--secondary btn--sm" type="button" data-project="proyecto-attentiondoctor" aria-haspopup="dialog">
+                Ver detalles <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+              </button>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/0xFarias/AttentionDoctor" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg> Repositorio</a>
+            </footer>
+            <!-- Contenido ampliado que project-modal.js muestra en el modal -->
+            <template data-project-details data-kicker="Web · Salud · Funcional">
+              <div data-slot="body">
+                <figure class="modal__figure">
+                  <img src="assets/img/projects/attentiondoctor.svg" alt="Interfaz de AttentionDoctor: menú lateral, calendario mensual de citas con estados y panel de atención con signos vitales y el botón «Generar receta»." width="640" height="400">
+                  <figcaption>Calendario de citas y registro de una atención con signos vitales.</figcaption>
+                </figure>
+                <div class="modal__grid">
+                  <section class="modal__section">
+                    <h3>Problema</h3>
+                    <p>En un consultorio la información suele quedar repartida entre fichas en papel, agendas y hojas de cálculo, lo que complica el seguimiento de cada paciente y la coordinación entre el médico y su asistente.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Solución</h3>
+                    <p>Aplicación en Django 5 con PostgreSQL organizada en tres módulos: <code>core</code> (pacientes, personal y catálogos), <code>doctor</code> (horarios, citas, atenciones, servicios y pagos) y <code>security</code> (usuarios, grupos y permisos). La interfaz usa plantillas de Django con Tailwind CSS.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Características</h3>
+                    <ul>
+                    <li>Registro de pacientes y ficha médica: antecedentes, alergias, vacunas y medicación actual.</li>
+                    <li>Horario semanal configurable y calendario mensual de citas con estados (pendiente, confirmada, cancelada, atendida, ausente).</li>
+                    <li>Atenciones con signos vitales, IMC, diagnóstico, tratamiento y receta médica.</li>
+                    <li>Acceso por roles para el médico y la asistente, con grupos y permisos de Django.</li>
+                    <li>Registro de servicios, pagos (integración con PayPal) y gastos del mes.</li>
+                    </ul>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Aprendizajes</h3>
+                    <p>Dividir un proyecto Django en aplicaciones independientes, aplicar el patrón MVC (MVT en Django), manejar sesiones y permisos, y guardar las credenciales en variables de entorno (<code>.env</code>) en lugar de dejarlas en el código.</p>
+                    <h3>Mi rol</h3>
+                    <p>Proyecto académico grupal de Ingeniería de Software (UNEMI).</p>
+                  </section>
+                </div>
+                <section class="modal__section">
+                  <h3>Tecnologías</h3>
+                  <ul class="tag-list">
+                    <li class="badge">Python</li>
+                    <li class="badge">Django</li>
+                    <li class="badge">PostgreSQL</li>
+                    <li class="badge">Tailwind CSS</li>
+                    <li class="badge">JavaScript</li>
+                  </ul>
+                </section>
+              </div>
+              <div data-slot="footer">
+                <a class="btn btn--secondary btn--sm" href="https://github.com/0xFarias/AttentionDoctor" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg> Repositorio</a>
+              </div>
+            </template>
+          </article>
+
+          <article class="card-project" id="proyecto-tracker-ia" data-tech="python django ia" aria-labelledby="proyecto-tracker-ia-title" data-reveal>
+            <figure class="card-project__media">
+              <img src="assets/img/projects/tracker-ia.svg" alt="Dashboard de Tracker IA: video en vivo con un motociclista marcado «con casco 0.94» y otro «sin casco 0.88», indicadores de las últimas 24 horas y una lista de infracciones." width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="card-project__body">
+              <p class="card-project__meta">
+                <span class="badge badge--status badge--done">Funcional</span>
+                <span>IA · Seguridad vial</span>
+              </p>
+              <h3 class="card-project__title" id="proyecto-tracker-ia-title">Tracker IA: motociclistas sin casco</h3>
+              <p class="card-project__desc">Plataforma web que analiza video en tiempo real, detecta a los motociclistas y verifica si usan casco, registrando cada infracción con su evidencia.</p>
+              <dl class="card-project__problem">
+                <dt>Problema que resuelve</dt>
+                <dd>Revisar video manualmente para controlar el uso del casco es lento y deja pasar infracciones; hace falta detectarlas de forma automática y con evidencia verificable.</dd>
+              </dl>
+              <ul class="tag-list">
+                <li class="badge">Python</li>
+                <li class="badge">Django</li>
+                <li class="badge">YOLOv8</li>
+                <li class="badge">OpenCV</li>
+                <li class="badge">WebSockets</li>
+              </ul>
+            </div>
+            <footer class="card-project__actions">
+              <button class="btn btn--secondary btn--sm" type="button" data-project="proyecto-tracker-ia" aria-haspopup="dialog">
+                Ver detalles <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+              </button>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/0xFarias/Tracker_IA" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg> Repositorio</a>
+            </footer>
+            <!-- Contenido ampliado que project-modal.js muestra en el modal -->
+            <template data-project-details data-kicker="IA · Seguridad vial · Funcional">
+              <div data-slot="body">
+                <figure class="modal__figure">
+                  <img src="assets/img/projects/tracker-ia.svg" alt="Dashboard de Tracker IA: video en vivo con un motociclista marcado «con casco 0.94» y otro «sin casco 0.88», indicadores de las últimas 24 horas y una lista de infracciones." width="640" height="400">
+                  <figcaption>Dashboard en tiempo real: detecciones sobre el video, indicadores e infracciones recientes.</figcaption>
+                </figure>
+                <div class="modal__grid">
+                  <section class="modal__section">
+                    <h3>Problema</h3>
+                    <p>Revisar video manualmente para controlar el uso del casco es lento y deja pasar infracciones; hace falta detectarlas de forma automática y con evidencia verificable.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Solución</h3>
+                    <p>Un pipeline con Ultralytics YOLOv8 y OpenCV procesa cada cámara: un modelo general detecta a los motociclistas y otro especializado verifica el casco. Un seguimiento por centroides mantiene la identidad de cada motociclista entre fotogramas y Django Channels envía al dashboard los fotogramas anotados y las alertas por WebSockets.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Características</h3>
+                    <ul>
+                    <li>Dashboard en vivo: estado de las cámaras, infracciones recientes e indicadores de las últimas 24 horas.</li>
+                    <li>Gestión de cámaras y fuentes de video.</li>
+                    <li>Reportes diarios en PDF con capturas de evidencia (ReportLab).</li>
+                    <li>Roles de Administrador, Operador y Visor con permisos distintos.</li>
+                    <li>Modelo personalizado entrenado para mejorar la detección en escenarios reales.</li>
+                    </ul>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Aprendizajes</h3>
+                    <p>Combinar dos modelos para reducir falsos positivos, seguir objetos entre fotogramas aunque se oculten por momentos y elegir la captura más nítida como evidencia de cada infracción.</p>
+                    <h3>Mi rol</h3>
+                    <p>Proyecto académico grupal de Ingeniería de Software (UNEMI).</p>
+                  </section>
+                </div>
+                <section class="modal__section">
+                  <h3>Tecnologías</h3>
+                  <ul class="tag-list">
+                    <li class="badge">Python</li>
+                    <li class="badge">Django</li>
+                    <li class="badge">YOLOv8</li>
+                    <li class="badge">OpenCV</li>
+                    <li class="badge">WebSockets</li>
+                  </ul>
+                </section>
+              </div>
+              <div data-slot="footer">
+                <a class="btn btn--secondary btn--sm" href="https://github.com/0xFarias/Tracker_IA" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg> Repositorio</a>
+              </div>
+            </template>
+          </article>
+
+          <article class="card-project" id="proyecto-cocoa-analyzer" data-tech="python ia" aria-labelledby="proyecto-cocoa-analyzer-title" data-reveal>
+            <figure class="card-project__media">
+              <img src="assets/img/projects/cocoa-analyzer.svg" alt="Interfaz de CocoaAnalyzer: una mazorca de cacao enmarcada con la etiqueta «frosty 0.91» y un panel con la probabilidad de cada clase." width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="card-project__body">
+              <p class="card-project__meta">
+                <span class="badge badge--status badge--progress">En desarrollo</span>
+                <span>IA · Agrotecnología</span>
+              </p>
+              <h3 class="card-project__title" id="proyecto-cocoa-analyzer-title">CocoaAnalyzer: enfermedades del cacao</h3>
+              <p class="card-project__desc">Aplicación web que analiza fotografías de mazorcas de cacao y detecta enfermedades con un modelo de visión por computador.</p>
+              <dl class="card-project__problem">
+                <dt>Problema que resuelve</dt>
+                <dd>La detección de enfermedades como la moniliasis o la mazorca negra depende de la inspección visual manual; un diagnóstico tardío provoca pérdidas en la cosecha.</dd>
+              </dl>
+              <ul class="tag-list">
+                <li class="badge">Python</li>
+                <li class="badge">YOLOv11</li>
+                <li class="badge">FastAPI</li>
+                <li class="badge">Roboflow</li>
+                <li class="badge">Google Colab</li>
+              </ul>
+            </div>
+            <footer class="card-project__actions">
+              <button class="btn btn--secondary btn--sm" type="button" data-project="proyecto-cocoa-analyzer" aria-haspopup="dialog">
+                Ver detalles <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+              </button>
+              <p class="card-project__note">Repositorio aún no publicado</p>
+            </footer>
+            <!-- Contenido ampliado que project-modal.js muestra en el modal -->
+            <template data-project-details data-kicker="IA · Agrotecnología · En desarrollo">
+              <div data-slot="body">
+                <figure class="modal__figure">
+                  <img src="assets/img/projects/cocoa-analyzer.svg" alt="Interfaz de CocoaAnalyzer: una mazorca de cacao enmarcada con la etiqueta «frosty 0.91» y un panel con la probabilidad de cada clase." width="640" height="400">
+                  <figcaption>Flujo de detección: la imagen se analiza y se muestra la clase con mayor confianza.</figcaption>
+                </figure>
+                <div class="modal__grid">
+                  <section class="modal__section">
+                    <h3>Problema</h3>
+                    <p>La detección de enfermedades como la moniliasis o la mazorca negra depende de la inspección visual manual; un diagnóstico tardío provoca pérdidas en la cosecha.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Solución</h3>
+                    <p>Un modelo YOLOv11 entrenado con un dataset de 683 imágenes identifica la enfermedad presente en la fotografía. Los pesos entrenados (<code>best.pt</code>) se sirven desde un backend en FastAPI que el frontend consume para mostrar el diagnóstico.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Características</h3>
+                    <ul>
+                    <li>Detección con recuadros sobre la mazorca y nivel de confianza.</li>
+                    <li>4 clases: mazorca negra (<i>blackpod</i>), moniliasis (<i>frosty</i>), sana (<i>healthy</i>) y barrenador (<i>podborer</i>).</li>
+                    <li>Entrenamiento en Google Colab con GPU.</li>
+                    <li>Despliegue planificado con contenedores Docker.</li>
+                    </ul>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Aprendizajes</h3>
+                    <p>Preparar un dataset etiquetado, entrenar en la nube con GPU y configurar el entorno de IA en WSL2, comprobando cómo la ubicación de los archivos afecta el rendimiento del entrenamiento.</p>
+                    <h3>Mi rol</h3>
+                    <p>Proyecto propio en desarrollo.</p>
+                  </section>
+                </div>
+                <section class="modal__section">
+                  <h3>Tecnologías</h3>
+                  <ul class="tag-list">
+                    <li class="badge">Python</li>
+                    <li class="badge">YOLOv11</li>
+                    <li class="badge">FastAPI</li>
+                    <li class="badge">Roboflow</li>
+                    <li class="badge">Google Colab</li>
+                  </ul>
+                </section>
+              </div>
+              <div data-slot="footer">
+
+              </div>
+            </template>
+          </article>
+
+          <article class="card-project" id="proyecto-agenda-valoraciones" data-tech="php mysql" aria-labelledby="proyecto-agenda-valoraciones-title" data-reveal>
+            <figure class="card-project__media">
+              <img src="assets/img/projects/agenda-valoraciones.svg" alt="Calendario mensual de AgendaValoraciones con las valoraciones de cada psicólogo marcadas por color y un panel lateral para registrar la evolución del paciente." width="640" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="card-project__body">
+              <p class="card-project__meta">
+                <span class="badge badge--status badge--done">Implementado</span>
+                <span>Web · Salud hospitalaria</span>
+              </p>
+              <h3 class="card-project__title" id="proyecto-agenda-valoraciones-title">AgendaValoraciones: evoluciones psicológicas</h3>
+              <p class="card-project__desc">Sistema web donde se agenda en un calendario a los psicólogos de un hospital para que realicen, dentro del mes, la evolución de sus pacientes.</p>
+              <dl class="card-project__problem">
+                <dt>Problema que resuelve</dt>
+                <dd>Sin un calendario común es difícil coordinar qué psicólogo valora a cada paciente y cuándo; las evoluciones se atrasan u olvidan y el seguimiento mensual se pierde.</dd>
+              </dl>
+              <ul class="tag-list">
+                <li class="badge">PHP</li>
+                <li class="badge">MySQL</li>
+                <li class="badge">HTML</li>
+                <li class="badge">CSS</li>
+              </ul>
+            </div>
+            <footer class="card-project__actions">
+              <button class="btn btn--secondary btn--sm" type="button" data-project="proyecto-agenda-valoraciones" aria-haspopup="dialog">
+                Ver detalles <svg class="icon icon--sm icon--arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+              </button>
+              <p class="card-project__note">Código no público: maneja datos clínicos</p>
+            </footer>
+            <!-- Contenido ampliado que project-modal.js muestra en el modal -->
+            <template data-project-details data-kicker="Web · Salud hospitalaria · Implementado">
+              <div data-slot="body">
+                <figure class="modal__figure">
+                  <img src="assets/img/projects/agenda-valoraciones.svg" alt="Calendario mensual de AgendaValoraciones con las valoraciones de cada psicólogo marcadas por color y un panel lateral para registrar la evolución del paciente." width="640" height="400">
+                  <figcaption>Calendario del mes con las valoraciones asignadas a cada psicólogo.</figcaption>
+                </figure>
+                <div class="modal__grid">
+                  <section class="modal__section">
+                    <h3>Problema</h3>
+                    <p>Sin un calendario común es difícil coordinar qué psicólogo valora a cada paciente y cuándo; las evoluciones se atrasan u olvidan y el seguimiento mensual se pierde.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Solución</h3>
+                    <p>Aplicación web en PHP con base de datos MySQL: se planifica el mes en un calendario, se asignan las valoraciones a cada psicólogo y, al atender al paciente, se registra su evolución en un historial ordenado.</p>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Características</h3>
+                    <ul>
+                    <li>Calendario mensual con las valoraciones asignadas a cada psicólogo.</li>
+                    <li>Registro de la evolución de cada paciente.</li>
+                    <li>Historial cronológico por paciente.</li>
+                    <li>Base de datos relacional en MySQL.</li>
+                    </ul>
+                  </section>
+                  <section class="modal__section">
+                    <h3>Aprendizajes</h3>
+                    <p>Modelar datos sensibles: separar psicólogos, pacientes, valoraciones y evoluciones en tablas relacionadas y pensar desde el diseño en la confidencialidad de la información clínica.</p>
+                    <h3>Mi rol</h3>
+                    <p>Proyecto profesional para el área de psicología de un hospital.</p>
+                  </section>
+                </div>
+                <section class="modal__section">
+                  <h3>Tecnologías</h3>
+                  <ul class="tag-list">
+                    <li class="badge">PHP</li>
+                    <li class="badge">MySQL</li>
+                    <li class="badge">HTML</li>
+                    <li class="badge">CSS</li>
+                  </ul>
+                </section>
+              </div>
+              <div data-slot="footer">
+
+              </div>
+            </template>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section section--alt" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info" data-reveal>
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title">Hablemos<span class="text-gradient">.</span></h2>
+          <p class="text-lead">
+            ¿Tienes una práctica, un proyecto o una idea en la que pueda aportar? Escríbeme y te responderé lo antes posible.
+          </p>
+          <address class="contact-list">
+            <ul class="list-reset">
+              <li class="contact-list__item">
+                <span class="contact-list__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg></span>
+                <span>
+                  <span class="contact-list__label">Correo institucional</span>
+                  <a class="link" href="mailto:jfariasv2@unemi.edu.ec">jfariasv2@unemi.edu.ec</a>
+                </span>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-branch"></use></svg></span>
+                <span>
+                  <span class="contact-list__label">GitHub</span>
+                  <a class="link" href="https://github.com/0xFarias" target="_blank" rel="noopener noreferrer">github.com/0xFarias</a>
+                </span>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map-pin"></use></svg></span>
+                <span>
+                  <span class="contact-list__label">Ubicación</span>
+                  Guayaquil, Ecuador
+                </span>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="contact__form panel" data-reveal>
+          <h3 class="contact__form-title">Envíame un mensaje</h3>
+          <form class="form" id="contact-form" action="mailto:jfariasv2@unemi.edu.ec" method="post" enctype="text/plain" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="contact-name">Nombre <span class="field__required" aria-hidden="true">*</span></label>
+                <input class="input" id="contact-name" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required minlength="3" maxlength="60" aria-describedby="contact-name-error">
+                <div class="field__meta">
+                  <p class="field__error" id="contact-name-error"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="contact-email">Correo electrónico <span class="field__required" aria-hidden="true">*</span></label>
+                <input class="input" id="contact-email" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" required maxlength="80" aria-describedby="contact-email-error">
+                <div class="field__meta">
+                  <p class="field__error" id="contact-email-error"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="contact-reason">Motivo <span class="field__required" aria-hidden="true">*</span></label>
+              <select class="select" id="contact-reason" name="motivo" required aria-describedby="contact-reason-error">
+                <option value="">Selecciona una opción</option>
+                <option value="Práctica preprofesional">Práctica preprofesional</option>
+                <option value="Colaboración en un proyecto">Colaboración en un proyecto</option>
+                <option value="Consulta académica">Consulta académica</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <div class="field__meta">
+                <p class="field__error" id="contact-reason-error"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="contact-message">Mensaje <span class="field__required" aria-hidden="true">*</span></label>
+              <textarea class="textarea" id="contact-message" name="mensaje" rows="5" placeholder="Cuéntame brevemente en qué puedo ayudarte" required minlength="20" maxlength="600" aria-describedby="contact-message-hint contact-message-error"></textarea>
+              <div class="field__meta">
+                <p class="field__hint" id="contact-message-hint">Mínimo 20 caracteres.</p>
+                <p class="field__error" id="contact-message-error"></p>
+                <p class="field__counter" data-counter-for="contact-message" aria-hidden="true">0 / 600</p>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              Enviar mensaje <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-send"></use></svg>
+            </button>
+            <p class="form__note">Los campos con <span class="field__required">*</span> son obligatorios. Al enviar se abrirá tu aplicación de correo con el mensaje listo.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Navegación por puntos (derecha, solo escritorio) -->
+  <nav class="section-dots" aria-label="Secciones de la página">
+    <ul class="section-dots__list">
+      <li><a class="section-dots__link is-active" href="#inicio" data-spy="inicio"><span class="section-dots__label">Inicio</span></a></li>
+      <li><a class="section-dots__link" href="#sobre-mi" data-spy="sobre-mi"><span class="section-dots__label">Sobre mí</span></a></li>
+      <li><a class="section-dots__link" href="#habilidades" data-spy="habilidades"><span class="section-dots__label">Habilidades</span></a></li>
+      <li><a class="section-dots__link" href="#proyectos" data-spy="proyectos"><span class="section-dots__label">Proyectos</span></a></li>
+      <li><a class="section-dots__link" href="#contacto" data-spy="contacto"><span class="section-dots__label">Contacto</span></a></li>
+    </ul>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; 2026 Jose Luis Farias Valdez. Hecho con HTML, CSS y JavaScript.</p>
+      <ul class="site-footer__links list-reset">
+        <li><a href="design-system.html">Design System</a></li>
+        <li><a href="https://github.com/0xFarias/portafolio" target="_blank" rel="noopener noreferrer">Código fuente</a></li>
+        <li><a href="#inicio">Volver arriba</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Modal reutilizable: project-modal.js inserta el detalle del proyecto -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal__inner">
+      <div class="modal__header">
+        <div>
+          <p class="modal__kicker" id="modal-kicker"></p>
+          <h2 class="modal__title" id="modal-title">Detalle del proyecto</h2>
+        </div>
+        <button class="icon-btn icon-btn--sm" type="button" data-modal-close aria-label="Cerrar detalle del proyecto">
+          <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="modal__body" id="modal-body"></div>
+      <div class="modal__footer" id="modal-footer"></div>
+    </div>
+  </dialog>
+
+  <!-- Notificación accesible -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>
+    <p class="toast__message"></p>
+  </div>
+
+  <button class="icon-btn back-to-top" type="button" aria-label="Volver al inicio de la página">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"></use></svg>
+  </button>
+</body>
+</html>

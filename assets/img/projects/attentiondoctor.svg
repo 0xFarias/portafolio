@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Interfaz de AttentionDoctor: calendario mensual de citas con estados y panel de atención con signos vitales">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151518"/><stop offset="1" stop-color="#111114"/></linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7"><stop offset="0" stop-color="#ff634a" stop-opacity="0.26"/><stop offset="1" stop-color="#ff634a" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#d2d2d4" stroke-opacity="0.06"/></pattern>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <rect x="24" y="24" width="592" height="352" rx="14" fill="#1e1e22" stroke="#38383f"/>
+  <path d="M24 38a14 14 0 0 1 14-14h564a14 14 0 0 1 14 14v18H24z" fill="#26262b"/>
+  <circle cx="42" cy="40" r="4" fill="#ff8a75"/><circle cx="56" cy="40" r="4" fill="#fbbf24"/><circle cx="70" cy="40" r="4" fill="#34d399"/>
+  <rect x="88" y="32" width="260" height="16" rx="8" fill="#111114"/>
+  <text x="98" y="44" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="9" fill="#a3a3a9">localhost:8000 / attention-doctor</text>
+  <rect x="24" y="56" width="120" height="320" fill="#111114" opacity="0.7"/>
+  <line x1="144" y1="56" x2="144" y2="376" stroke="#38383f"/>
+  <rect x="38" y="72" width="18" height="18" rx="5" fill="#ff634a"/><path d="M47 76v10M42 81h10" stroke="#141416" stroke-width="2.4"/>
+  <text x="62" y="85" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">AttentionDoctor</text>
+  <circle cx="46" cy="110" r="3.5" fill="#a3a3a9"/>
+  <text x="58" y="113" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Dashboard</text>
+  <circle cx="46" cy="140" r="3.5" fill="#a3a3a9"/>
+  <text x="58" y="143" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Pacientes</text>
+  <rect x="34" y="159" width="100" height="22" rx="6" fill="#ff634a" fill-opacity="0.16" stroke="#ff634a" stroke-opacity="0.6"/>
+  <circle cx="46" cy="170" r="3.5" fill="#ff634a"/>
+  <text x="58" y="173" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#f4f4f6">Citas</text>
+  <circle cx="46" cy="200" r="3.5" fill="#a3a3a9"/>
+  <text x="58" y="203" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Atenciones</text>
+  <circle cx="46" cy="230" r="3.5" fill="#a3a3a9"/>
+  <text x="58" y="233" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Pagos</text>
+  <circle cx="46" cy="260" r="3.5" fill="#a3a3a9"/>
+  <text x="58" y="263" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Seguridad</text>
+  <text x="162" y="82" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#f4f4f6" font-weight="700">Citas · calendario mensual</text>
+  <text x="162" y="98" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#a3a3a9">Estados: pendiente, confirmada, atendida</text>
+  <text x="179.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">L</text>
+  <text x="213.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">M</text>
+  <text x="247.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">X</text>
+  <text x="281.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">J</text>
+  <text x="315.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">V</text>
+  <text x="349.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">S</text>
+  <text x="383.0" y="122" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">D</text>
+  <rect x="164" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="169" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">1</text>
+  <rect x="198" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="203" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">2</text>
+  <rect x="232" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="237" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">3</text>
+  <rect x="237" y="148" width="20" height="5" rx="2.5" fill="#34d399"/>
+  <rect x="266" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="271" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">4</text>
+  <rect x="300" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="305" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">5</text>
+  <rect x="305" y="148" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="334" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="339" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">6</text>
+  <rect x="368" y="130" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="373" y="142" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">7</text>
+  <rect x="164" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="169" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">8</text>
+  <rect x="169" y="182" width="20" height="5" rx="2.5" fill="#d2d2d4"/>
+  <rect x="198" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="203" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">9</text>
+  <rect x="232" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="237" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">10</text>
+  <rect x="237" y="182" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="266" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="271" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">11</text>
+  <rect x="300" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="305" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">12</text>
+  <rect x="305" y="182" width="20" height="5" rx="2.5" fill="#34d399"/>
+  <rect x="334" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="339" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">13</text>
+  <rect x="368" y="164" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="373" y="176" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">14</text>
+  <rect x="164" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="169" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">15</text>
+  <rect x="169" y="216" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="198" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="203" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">16</text>
+  <rect x="232" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="237" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">17</text>
+  <rect x="237" y="216" width="20" height="5" rx="2.5" fill="#d2d2d4"/>
+  <rect x="266" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#ff634a" stroke-width="2"/>
+  <text x="271" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">18</text>
+  <rect x="271" y="216" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="300" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="305" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">19</text>
+  <rect x="334" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="339" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">20</text>
+  <rect x="368" y="198" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="373" y="210" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">21</text>
+  <rect x="164" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="169" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">22</text>
+  <rect x="169" y="250" width="20" height="5" rx="2.5" fill="#34d399"/>
+  <rect x="198" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="203" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">23</text>
+  <rect x="232" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="237" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">24</text>
+  <rect x="237" y="250" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="266" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="271" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">25</text>
+  <rect x="300" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="305" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">26</text>
+  <rect x="305" y="250" width="20" height="5" rx="2.5" fill="#d2d2d4"/>
+  <rect x="334" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="339" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">27</text>
+  <rect x="368" y="232" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="373" y="244" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">28</text>
+  <rect x="164" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="169" y="278" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#f4f4f6">29</text>
+  <rect x="169" y="284" width="20" height="5" rx="2.5" fill="#ff634a"/>
+  <rect x="198" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <text x="203" y="278" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8" fill="#a3a3a9">30</text>
+  <rect x="232" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <rect x="266" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <rect x="300" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <rect x="334" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <rect x="368" y="266" width="30" height="30" rx="5" fill="#111114" stroke="#38383f" stroke-width="1"/>
+  <rect x="162" y="308" width="12" height="5" rx="2.5" fill="#d2d2d4"/>
+  <text x="179" y="314" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#a3a3a9">Pendiente</text>
+  <rect x="242" y="308" width="12" height="5" rx="2.5" fill="#ff634a"/>
+  <text x="259" y="314" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#a3a3a9">Confirmada</text>
+  <rect x="322" y="308" width="12" height="5" rx="2.5" fill="#34d399"/>
+  <text x="339" y="314" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#a3a3a9">Atendida</text>
+  <rect x="416" y="64" width="186" height="298" rx="10" fill="#111114" stroke="#38383f"/>
+  <text x="430" y="88" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#ff8a75" letter-spacing="1">ATENCIÓN · 18 SEP · 10:30</text>
+  <text x="430" y="108" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#f4f4f6" font-weight="700">Paciente #0142</text>
+  <text x="430" y="124" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Consulta general</text>
+  <rect x="430" y="140" width="76" height="36" rx="6" fill="#1e1e22" stroke="#38383f"/>
+  <text x="438" y="154" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#a3a3a9">Presión</text>
+  <text x="438" y="169" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="11" fill="#f4f4f6" font-weight="700">120/80</text>
+  <rect x="514" y="140" width="76" height="36" rx="6" fill="#1e1e22" stroke="#38383f"/>
+  <text x="522" y="154" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#a3a3a9">Temp.</text>
+  <text x="522" y="169" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="11" fill="#f4f4f6" font-weight="700">36.7 °C</text>
+  <rect x="430" y="184" width="76" height="36" rx="6" fill="#1e1e22" stroke="#38383f"/>
+  <text x="438" y="198" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#a3a3a9">Peso</text>
+  <text x="438" y="213" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="11" fill="#f4f4f6" font-weight="700">68 kg</text>
+  <rect x="514" y="184" width="76" height="36" rx="6" fill="#1e1e22" stroke="#38383f"/>
+  <text x="522" y="198" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#a3a3a9">IMC</text>
+  <text x="522" y="213" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="11" fill="#f4f4f6" font-weight="700">23.4</text>
+  <text x="430" y="246" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">Diagnóstico</text>
+  <rect x="430" y="254" width="158" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="430" y="264" width="132" height="5" rx="2.5" fill="#26262b"/>
+  <text x="430" y="290" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">Tratamiento</text>
+  <rect x="430" y="298" width="148" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="430" y="308" width="120" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="430" y="322" width="158" height="28" rx="6" fill="#ff634a"/>
+  <text x="509" y="340" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="9.5" fill="#141416" font-weight="700" text-anchor="middle">GENERAR RECETA</text>
+</svg>

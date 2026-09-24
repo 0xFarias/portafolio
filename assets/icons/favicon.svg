@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .side { fill: #2c2c31; } .top { fill: #3a3a40; } .glyph { fill: #f4f4f6; } .bump { fill: #ff634a; }
+    @media (prefers-color-scheme: light) {
+      .side { fill: #d2d2d4; } .top { fill: #ffffff; } .glyph { fill: #18181b; }
+    }
+  </style>
+  <rect class="side" x="2" y="4" width="60" height="56" rx="13"/>
+  <rect class="top" x="6" y="6" width="52" height="44" rx="10"/>
+  <path class="glyph" d="M23 13h6.5v15.5a9 9 0 0 1-18 0v-1.5h6.5v1.5a2.5 2.5 0 0 0 5 0z"/>
+  <path class="glyph" d="M34 13h18v6h-11.2v4.2h9.5v5.8h-9.5v8h-6.8z"/>
+  <rect class="bump" x="21" y="40" width="9" height="3.2" rx="1.1"/>
+  <rect class="bump" x="42" y="40" width="9" height="3.2" rx="1.1"/>
+</svg>

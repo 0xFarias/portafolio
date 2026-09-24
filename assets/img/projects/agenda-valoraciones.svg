@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Calendario mensual de AgendaValoraciones con las valoraciones asignadas a cada psicólogo y el panel para registrar la evolución del paciente">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151518"/><stop offset="1" stop-color="#111114"/></linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7"><stop offset="0" stop-color="#ff634a" stop-opacity="0.26"/><stop offset="1" stop-color="#ff634a" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#d2d2d4" stroke-opacity="0.06"/></pattern>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <rect x="24" y="24" width="592" height="352" rx="14" fill="#1e1e22" stroke="#38383f"/>
+  <path d="M24 38a14 14 0 0 1 14-14h564a14 14 0 0 1 14 14v18H24z" fill="#26262b"/>
+  <circle cx="42" cy="40" r="4" fill="#ff8a75"/><circle cx="56" cy="40" r="4" fill="#fbbf24"/><circle cx="70" cy="40" r="4" fill="#34d399"/>
+  <rect x="88" y="32" width="260" height="16" rx="8" fill="#111114"/>
+  <text x="98" y="44" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="9" fill="#a3a3a9">agenda-valoraciones / mes</text>
+  <text x="44" y="80" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#f4f4f6" font-weight="700">Valoraciones del mes</text>
+  <text x="44" y="96" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#a3a3a9">Psicología · evoluciones por paciente</text>
+  <circle cx="262" cy="92" r="4" fill="#ff634a"/>
+  <text x="269" y="95" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">Ps. A</text>
+  <circle cx="306" cy="92" r="4" fill="#d2d2d4"/>
+  <text x="313" y="95" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">Ps. B</text>
+  <circle cx="350" cy="92" r="4" fill="#ff8a75"/>
+  <text x="357" y="95" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">Ps. C</text>
+  <text x="69.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Lun</text>
+  <text x="119.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Mar</text>
+  <text x="169.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Mié</text>
+  <text x="219.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Jue</text>
+  <text x="269.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Vie</text>
+  <text x="319.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Sáb</text>
+  <text x="369.0" y="118" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9" text-anchor="middle">Dom</text>
+  <rect x="46" y="126" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="52" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">1</text>
+  <rect x="96" y="126" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="102" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">2</text>
+  <path d="M127 135l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="101" y="146" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="101" y="156" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="146" y="126" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="152" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">3</text>
+  <path d="M177 135l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="151" y="146" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="0.45"/>
+  <rect x="196" y="126" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="202" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">4</text>
+  <path d="M227 135l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="201" y="146" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="246" y="126" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="252" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">5</text>
+  <path d="M277 135l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="251" y="146" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="296" y="126" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="302" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">6</text>
+  <rect x="346" y="126" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="352" y="139" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">7</text>
+  <rect x="46" y="176" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="52" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">8</text>
+  <path d="M77 185l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="51" y="196" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="51" y="206" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="0.45"/>
+  <rect x="96" y="176" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="102" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">9</text>
+  <path d="M127 185l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="101" y="196" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="146" y="176" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="152" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">10</text>
+  <path d="M177 185l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="151" y="196" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="196" y="176" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="202" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">11</text>
+  <path d="M227 185l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="201" y="196" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="201" y="206" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="0.45"/>
+  <rect x="246" y="176" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="252" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">12</text>
+  <path d="M277 185l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="251" y="196" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="296" y="176" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="302" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">13</text>
+  <rect x="346" y="176" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="352" y="189" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">14</text>
+  <rect x="46" y="226" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="52" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">15</text>
+  <path d="M77 235l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="51" y="246" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="96" y="226" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="102" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">16</text>
+  <path d="M127 235l3 3 6-6" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="101" y="246" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="0.45"/>
+  <rect x="101" y="256" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="0.45"/>
+  <rect x="146" y="226" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#ff634a" stroke-width="2"/>
+  <text x="152" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">17</text>
+  <rect x="151" y="246" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="1"/>
+  <rect x="196" y="226" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="202" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">18</text>
+  <rect x="201" y="246" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="1"/>
+  <rect x="246" y="226" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="252" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">19</text>
+  <rect x="251" y="246" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="1"/>
+  <rect x="296" y="226" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="302" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">20</text>
+  <rect x="346" y="226" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="352" y="239" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">21</text>
+  <rect x="46" y="276" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="52" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">22</text>
+  <rect x="51" y="296" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="1"/>
+  <rect x="96" y="276" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="102" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">23</text>
+  <rect x="101" y="296" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="1"/>
+  <rect x="101" y="306" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="1"/>
+  <rect x="146" y="276" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="152" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">24</text>
+  <rect x="151" y="296" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="1"/>
+  <rect x="196" y="276" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="202" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">25</text>
+  <rect x="201" y="296" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="1"/>
+  <rect x="246" y="276" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="252" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">26</text>
+  <rect x="251" y="296" width="36" height="7" rx="3.5" fill="#ff8a75" fill-opacity="1"/>
+  <rect x="296" y="276" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="302" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">27</text>
+  <rect x="346" y="276" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <text x="352" y="289" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#a3a3a9">28</text>
+  <rect x="46" y="326" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="52" y="339" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">29</text>
+  <rect x="51" y="346" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="1"/>
+  <rect x="96" y="326" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <text x="102" y="339" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#f4f4f6">30</text>
+  <rect x="101" y="346" width="36" height="7" rx="3.5" fill="#ff634a" fill-opacity="1"/>
+  <rect x="101" y="356" width="36" height="7" rx="3.5" fill="#d2d2d4" fill-opacity="1"/>
+  <rect x="146" y="326" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <rect x="196" y="326" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <rect x="246" y="326" width="46" height="46" rx="6" fill="#111114" fill-opacity="1" stroke="#38383f" stroke-width="1"/>
+  <rect x="296" y="326" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <rect x="346" y="326" width="46" height="46" rx="6" fill="#26262b" fill-opacity="0.5" stroke="#38383f" stroke-width="1"/>
+  <rect x="410" y="64" width="192" height="298" rx="10" fill="#111114" stroke="#38383f"/>
+  <text x="424" y="88" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="8.5" fill="#ff8a75" letter-spacing="1">EVOLUCIÓN · 17 DEL MES</text>
+  <text x="424" y="108" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#f4f4f6" font-weight="700">Paciente #0087</text>
+  <circle cx="429" cy="121" r="4" fill="#ff8a75"/>
+  <text x="438" y="124" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#a3a3a9">Asignado a Ps. C</text>
+  <text x="424" y="150" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">Motivo de valoración</text>
+  <rect x="424" y="158" width="164" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="168" width="136" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="178" width="150" height="5" rx="2.5" fill="#26262b"/>
+  <text x="424" y="204" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">Evolución del mes</text>
+  <rect x="424" y="212" width="164" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="222" width="136" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="232" width="150" height="5" rx="2.5" fill="#26262b"/>
+  <text x="424" y="258" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="#f4f4f6" font-weight="700">Plan / próximos pasos</text>
+  <rect x="424" y="266" width="164" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="276" width="136" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="286" width="150" height="5" rx="2.5" fill="#26262b"/>
+  <rect x="424" y="320" width="164" height="28" rx="6" fill="#ff634a"/>
+  <text x="506" y="338" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="9.5" fill="#141416" font-weight="700" text-anchor="middle">GUARDAR EVOLUCIÓN</text>
+</svg>
