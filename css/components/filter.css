@@ -1,0 +1,54 @@
+/* ==========================================================================
+   filter.css — Chips de filtro (botones con estado aria-pressed)
+   ========================================================================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block-end: var(--space-md);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-block-size: var(--control-height-sm);
+  padding-inline: var(--space-md);
+  border: var(--border-subtle);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+
+.chip:hover {
+  border-color: var(--color-border-strong);
+  color: var(--color-text);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+  color: var(--color-text-on-primary);
+}
+
+.chip__count {
+  font-size: var(--fs-2xs);
+  opacity: 0.7;
+}
+
+.filter-status {
+  margin-block-end: var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}

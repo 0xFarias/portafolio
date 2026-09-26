@@ -10,3 +10,20 @@
 @import url("base/reset.css");
 @import url("base/typography.css");
 @import url("base/utilities.css");
+
+/* 2. Layout: estructura de la aplicación */
+@import url("layout/shell.css");
+@import url("layout/section.css");
+@import url("layout/footer.css");
+
+/* 3. Componentes reutilizables (documentados en design-system.html) */
+@import url("components/logo.css");
+@import url("components/button.css");
+@import url("components/badge.css");
+@import url("components/navbar.css");
+@import url("components/card.css");
+@import url("components/skill.css");
+@import url("components/filter.css");
+@import url("components/form.css");
+@import url("components/modal.css");
+@import url("components/feedback.css");

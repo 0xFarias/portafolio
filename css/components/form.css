@@ -1,0 +1,140 @@
+/* ==========================================================================
+   form.css — Campos de formulario, estados de validación y mensajes
+   ========================================================================== */
+
+.form {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form__row {
+  display: grid;
+  gap: var(--space-md) var(--space-lg);
+}
+
+@media (min-width: 40rem) {
+  .form__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.form__note {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.field__label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+.field__required {
+  color: var(--color-accent);
+}
+
+.input,
+.textarea,
+.select {
+  inline-size: 100%;
+  min-block-size: var(--control-height);
+  padding: var(--space-sm) var(--space-md);
+  border: var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--fs-base);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.textarea {
+  min-block-size: 9rem;
+  line-height: var(--lh-base);
+  resize: vertical;
+}
+
+/* Select con flecha dibujada con degradados (sin imágenes) */
+.select {
+  appearance: none;
+  padding-inline-end: var(--space-2xl);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-muted) 50%),
+    linear-gradient(135deg, var(--color-text-muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.25rem) 50%,
+    calc(100% - 0.9375rem) 50%;
+  background-size: 0.3125rem 0.3125rem;
+  background-repeat: no-repeat;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.75;
+}
+
+.input:hover,
+.textarea:hover,
+.select:hover {
+  border-color: color-mix(in srgb, var(--color-primary) 50%, var(--color-border-strong));
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.select:focus-visible {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-focus);
+}
+
+.field__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  min-block-size: 1.25rem;
+  font-size: var(--fs-xs);
+}
+
+.field__hint {
+  color: var(--color-text-muted);
+}
+
+.field__counter {
+  margin-inline-start: auto;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.field__error {
+  display: none;
+  color: var(--color-danger);
+  font-weight: var(--fw-medium);
+}
+
+/* Estados que asigna contact-form.js */
+.field.is-invalid .input,
+.field.is-invalid .textarea,
+.field.is-invalid .select {
+  border-color: var(--color-danger);
+}
+
+.field.is-invalid .field__error {
+  display: block;
+}
+
+.field.is-invalid .field__hint {
+  display: none;
+}
+
+.field.is-valid .input,
+.field.is-valid .textarea,
+.field.is-valid .select {
+  border-color: var(--color-success);
+}

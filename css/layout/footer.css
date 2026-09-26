@@ -1,0 +1,33 @@
+/* ==========================================================================
+   footer.css — Pie de página
+   ========================================================================== */
+
+.site-footer {
+  border-block-start: var(--border-subtle);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-block: var(--space-xl);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.site-footer a {
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.site-footer a:hover {
+  color: var(--color-text);
+}

@@ -1,0 +1,52 @@
+/* ==========================================================================
+   logo.css — Logotipo "teclas guía": la J y la F como teclas de teclado
+   con el cursor coral. Los colores salen de los tokens --logo-*, por eso
+   el logotipo cambia solo con el tema claro/oscuro.
+   ========================================================================== */
+
+.logo {
+  display: block;
+  flex-shrink: 0;
+  inline-size: auto;
+  block-size: 2.5rem;
+  overflow: visible;
+}
+
+.logo__side {
+  fill: var(--logo-key-side);
+}
+
+.logo__top {
+  fill: var(--logo-key-top);
+}
+
+.logo__glyph {
+  fill: var(--logo-glyph);
+}
+
+.logo__bump {
+  fill: var(--logo-bump);
+}
+
+/* Al pasar el cursor, las teclas "se presionan" una detrás de otra */
+.logo__cap {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.logo__key + .logo__key .logo__cap {
+  transition-delay: 60ms;
+}
+
+a:hover > .logo .logo__cap,
+a:focus-visible > .logo .logo__cap {
+  transform: translateY(3px);
+}
+
+/* Variante pequeña (favicon, avatar de redes, etc.) */
+.logo--sm {
+  block-size: 1.75rem;
+}
+
+.logo--lg {
+  block-size: 4.5rem;
+}

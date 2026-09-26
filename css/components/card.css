@@ -1,0 +1,131 @@
+/* ==========================================================================
+   card.css — Superficies reutilizables: panel y Card de proyecto
+   (componente principal de la sección Proyectos).
+   ========================================================================== */
+
+/* ---------- Panel genérico ---------- */
+.panel {
+  padding: clamp(var(--space-lg), 4vw, var(--space-xl));
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+/* ---------- Card de proyecto ---------- */
+.card-project {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out);
+}
+
+.card-project:hover {
+  transform: translateY(calc(-1 * var(--space-2xs)));
+  border-color: color-mix(in srgb, var(--color-primary) 55%, transparent);
+}
+
+.card-project__media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-block-end: var(--border-subtle);
+  background: var(--color-surface-raised);
+}
+
+.card-project__media img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.card-project:hover .card-project__media img {
+  transform: scale(1.04);
+}
+
+.card-project__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.card-project__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.card-project__title {
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+}
+
+.card-project__desc {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* Bloque "Problema que resuelve" */
+.card-project__problem {
+  padding: var(--space-sm) var(--space-md);
+  border-inline-start: 2px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: color-mix(in srgb, var(--color-accent) 7%, transparent);
+  font-size: var(--fs-sm);
+}
+
+.card-project__problem dt {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.card-project__problem dd {
+  margin: 0;
+}
+
+.card-project__body .tag-list {
+  margin-block-start: auto;
+  padding-block-start: var(--space-xs);
+}
+
+.card-project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.card-project__note {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* Animación al reaparecer tras aplicar un filtro (project-filter.js) */
+.card-project.is-entering {
+  animation: card-in var(--duration-base) var(--ease-out);
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-sm)) scale(0.98);
+  }
+}

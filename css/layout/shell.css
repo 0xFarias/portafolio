@@ -1,0 +1,148 @@
+/* ==========================================================================
+   shell.css — Estructura general: barra lateral (desktop) / barra superior
+   (móvil y tablet) + área de contenido.
+   Mobile-first: se parte de la barra superior y se amplía a barra lateral.
+   ========================================================================== */
+
+.site-header {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: var(--z-header);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  block-size: var(--topbar-height);
+  padding-inline: var(--space-md);
+  border-block-end: var(--border-subtle);
+}
+
+/* El desenfoque va en un pseudo-elemento: si estuviera en el header,
+   el menú móvil (position: fixed) quedaría atrapado dentro de él. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: color-mix(in srgb, var(--color-background) 82%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+/* Marca: logotipo de teclas + nombre (ver components/logo.css) */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-inline-end: auto;
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.brand__logo {
+  block-size: 2.25rem;
+}
+
+.brand__name {
+  inline-size: min-content;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Herramientas del header (tema + redes) */
+.site-header__tools {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.site-header__tools .social-list {
+  display: none;
+}
+
+.menu-toggle {
+  order: 2;
+}
+
+main {
+  padding-block-start: var(--topbar-height);
+}
+
+/* Bloquea el scroll del fondo mientras el menú móvil está abierto */
+body.is-menu-open {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Desktop (≥ 64rem / 1024px): barra lateral fija como en la referencia
+   -------------------------------------------------------------------------- */
+@media (min-width: 64rem) {
+  .site-header {
+    inset-block: 0;
+    inset-inline-end: auto;
+    inline-size: var(--sidebar-width);
+    block-size: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-xl);
+    padding: var(--space-xl) var(--space-lg);
+    border-block-end: 0;
+    border-inline-end: var(--border-subtle);
+  }
+
+  .site-header::before {
+    background: color-mix(in srgb, var(--color-surface) 55%, transparent);
+  }
+
+  .brand {
+    margin-inline-end: 0;
+    padding-inline-start: var(--space-xs);
+  }
+
+  .brand__logo {
+    block-size: 2.75rem;
+  }
+
+  .brand__name {
+    font-size: var(--fs-xl);
+  }
+
+  .site-header__tools {
+    order: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding-inline-start: var(--space-xs);
+  }
+
+  .site-header__tools .social-list {
+    display: flex;
+  }
+
+  main,
+  .site-footer {
+    margin-inline-start: var(--sidebar-width);
+  }
+
+  main {
+    padding-block-start: 0;
+  }
+}
+
+/* Escritorio con poca altura (p. ej. 1366×768 con barras del navegador) */
+@media (min-width: 64rem) and (max-height: 45rem) {
+  .site-header {
+    gap: var(--space-md);
+    padding-block: var(--space-lg);
+  }
+
+  .brand__logo {
+    block-size: 2.25rem;
+  }
+}
