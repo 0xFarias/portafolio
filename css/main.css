@@ -27,3 +27,6 @@
 @import url("components/form.css");
 @import url("components/modal.css");
 @import url("components/feedback.css");
+
+/* 4. Estilos específicos de cada página */
+@import url("pages/home.css");

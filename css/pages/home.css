@@ -1,0 +1,412 @@
+/* ==========================================================================
+   home.css — Estilos propios de index.html (secciones de la portada)
+   ========================================================================== */
+
+/* ==========================================================================
+   INICIO / HERO
+   ========================================================================== */
+.hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-block-size: calc(100svh - var(--topbar-height));
+  padding-block: var(--space-2xl) var(--space-4xl);
+  overflow: hidden;
+}
+
+/* Puntos luminosos dispersos (decorativos) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 12% 22%, var(--color-secondary) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 47% 12%, var(--color-primary) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 58% 78%, var(--color-primary) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 12%, var(--color-secondary) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 35% 60%, var(--color-secondary) 0 1px, transparent 2px),
+    radial-gradient(circle at 92% 64%, var(--color-accent) 0 1.5px, transparent 2.5px);
+  opacity: 0.7;
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.hero__status {
+  justify-self: start;
+}
+
+.hero__content {
+  container-type: inline-size;
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.hero__title {
+  display: grid;
+  /* Se ajusta al ancho de su columna para que el apellido nunca desborde */
+  font-size: min(var(--fs-display), 15.5cqi);
+}
+
+.hero__line {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__dot {
+  color: var(--color-secondary);
+  -webkit-text-fill-color: var(--color-secondary);
+}
+
+.hero__tagline {
+  max-inline-size: 36rem;
+  color: var(--color-text-muted);
+  font-size: clamp(var(--fs-md), 1rem + 0.6vw, var(--fs-xl));
+  line-height: 1.55;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding-block-start: var(--space-xs);
+}
+
+/* ---------- Fotografía con marco luminoso ---------- */
+.hero__figure {
+  position: relative;
+  justify-self: center;
+  inline-size: min(var(--hero-figure-width), 82%);
+  margin-block: var(--space-md) var(--space-xl);
+}
+
+.hero__figure::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--space-md));
+  z-index: -1;
+  border: 1.5px solid transparent;
+  border-image: var(--gradient-border) 1;
+  box-shadow: var(--shadow-figure);
+}
+
+.hero__figure::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 38%;
+  inset-inline-end: calc(-1 * var(--space-md) - 0.3rem);
+  inline-size: 0.6rem;
+  block-size: 0.6rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.hero__photo {
+  inline-size: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-raised);
+}
+
+.hero__badge {
+  position: absolute;
+  inset-block-end: calc(-1 * var(--space-lg));
+  inset-inline-end: calc(-1 * var(--space-lg));
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-md) var(--space-lg);
+  border: var(--border-strong);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-surface-raised) 85%, transparent);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.hero__badge strong {
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  line-height: 1.1;
+}
+
+.hero__badge span {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Indicador de scroll ---------- */
+.hero__scroll {
+  position: absolute;
+  inset-block-end: var(--space-xl);
+  inset-inline-start: 50%;
+  display: none;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.hero__scroll::before {
+  content: "";
+  inline-size: var(--border-width);
+  block-size: var(--space-2xl);
+  background: linear-gradient(var(--color-secondary), transparent);
+  animation: scroll-cue 2.2s var(--ease-out) infinite;
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  51% {
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+@media (min-width: 48rem) {
+  .hero__figure {
+    inline-size: min(var(--hero-figure-width), 60%);
+  }
+
+  .hero__scroll {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    min-block-size: 100svh;
+    padding-block: var(--space-4xl);
+  }
+
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    column-gap: var(--space-2xl);
+  }
+
+  .hero__status {
+    position: absolute;
+    inset-block-start: var(--space-xl);
+    inset-inline-end: var(--space-3xl);
+  }
+
+  .hero__figure {
+    inline-size: 100%;
+    max-inline-size: var(--hero-figure-width);
+    margin-block: 0;
+  }
+}
+
+/* ==========================================================================
+   SOBRE MÍ
+   ========================================================================== */
+.about__grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.about__subtitle {
+  margin-block-end: var(--space-md);
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+}
+
+.about__bio {
+  display: grid;
+  align-content: start;
+  gap: var(--space-md);
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+}
+
+.about__bio strong {
+  color: var(--color-text);
+}
+
+.about__actions {
+  padding-block-start: var(--space-xs);
+}
+
+.about__label {
+  margin-block: var(--space-lg) var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0;
+}
+
+/* Línea de tiempo de formación */
+.timeline {
+  display: grid;
+  gap: var(--space-lg);
+  list-style: none;
+  padding: 0;
+}
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.timeline__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-block: calc(var(--control-height-sm) + var(--space-2xs)) calc(-1 * var(--space-lg) + var(--space-2xs));
+  inset-inline-start: calc(var(--control-height-sm) / 2);
+  inline-size: var(--border-width);
+  background: var(--color-border-strong);
+}
+
+.timeline__icon {
+  display: grid;
+  place-items: center;
+  inline-size: var(--control-height-sm);
+  block-size: var(--control-height-sm);
+  border: var(--border-width) solid color-mix(in srgb, var(--color-secondary) 40%, transparent);
+  border-radius: 50%;
+  color: var(--color-secondary);
+}
+
+.timeline__meta {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.timeline__title {
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+}
+
+.timeline__text {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+@media (min-width: 64rem) {
+  .about__grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: var(--space-2xl);
+  }
+}
+
+/* ==========================================================================
+   HABILIDADES
+   ========================================================================== */
+.section-header__text {
+  display: grid;
+  gap: var(--space-md);
+  max-inline-size: var(--content-max);
+}
+
+/* ==========================================================================
+   PROYECTOS
+   ========================================================================== */
+/* Máximo dos columnas: cada card mide al menos 20rem o la mitad del ancho */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(20rem, (100% - var(--space-lg)) / 2)), 1fr));
+  gap: var(--space-lg);
+}
+
+/* ==========================================================================
+   CONTACTO
+   ========================================================================== */
+.contact {
+  display: grid;
+  gap: var(--space-2xl);
+}
+
+.contact__info {
+  display: grid;
+  align-content: start;
+  gap: var(--space-lg);
+}
+
+.contact-list ul {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.contact-list__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  min-inline-size: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.contact-list__item > span:last-child {
+  display: grid;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-list__icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  inline-size: var(--control-height);
+  block-size: var(--control-height);
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.contact-list__label {
+  color: var(--color-text);
+  font-weight: var(--fw-semibold);
+}
+
+.contact__form-title {
+  margin-block-end: var(--space-lg);
+  font-size: var(--fs-2xl);
+  text-transform: uppercase;
+}
+
+@media (min-width: 64rem) {
+  .contact {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+}
