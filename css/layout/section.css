@@ -43,4 +43,11 @@
     align-items: end;
     column-gap: var(--space-2xl);
   }
+
+  /* La leyenda se apila en columna: en una sola fila ocupaba casi todo el
+     ancho y aplastaba el texto del encabezado (se encimaban). */
+  .section-header--split .level-legend {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
 }
