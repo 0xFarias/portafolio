@@ -1,0 +1,641 @@
+/* ==========================================================================
+   design-system.css — Estilos exclusivos de design-system.html
+   (muestras de tokens y contenedores de demostración). Los componentes
+   que se muestran NO se redefinen aquí: vienen de css/components/.
+   ========================================================================== */
+
+/* ---------- Presentación ---------- */
+.ds-hero {
+  padding-block: clamp(var(--space-2xl), 8vw, var(--space-4xl)) var(--space-2xl);
+}
+
+.ds-hero .container {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.ds-hero__title {
+  font-size: clamp(3rem, 2rem + 6vw, 7rem);
+}
+
+.ds-hero__sub {
+  display: block;
+  font-size: 0.42em;
+  color: var(--color-text-muted);
+}
+
+.ds-hero__lead {
+  max-inline-size: 60ch;
+}
+
+.ds-toc .filter-bar {
+  margin: 0;
+}
+
+/* ---------- Agrupaciones ---------- */
+.ds-group {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.ds-group + .ds-group {
+  margin-block-start: var(--space-2xl);
+}
+
+.ds-group > h3 {
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+}
+
+/* ---------- Colores ---------- */
+.swatch-grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  gap: var(--space-md);
+}
+
+.swatch {
+  overflow: hidden;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.swatch__color {
+  display: grid;
+  place-items: end;
+  inline-size: 100%;
+  block-size: 5.5rem;
+  padding: var(--space-sm);
+  border-block-end: var(--border-subtle);
+  color: transparent;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.swatch__color:hover,
+.swatch__color:focus-visible {
+  color: var(--color-text);
+}
+
+.swatch__color .icon {
+  padding: var(--space-2xs);
+  box-sizing: content-box;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-background) 70%, transparent);
+}
+
+.swatch__info {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+}
+
+.swatch__name {
+  font-weight: var(--fw-semibold);
+}
+
+.swatch__token,
+.swatch__value {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  overflow-wrap: anywhere;
+}
+
+.swatch__value {
+  color: var(--color-secondary);
+}
+
+.swatch__use {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* ---------- Tipografía ---------- */
+.font-sample--display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+}
+
+.font-sample--body {
+  font-family: var(--font-body);
+}
+
+.font-sample--mono {
+  font-family: var(--font-mono);
+}
+
+.font-grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: var(--space-md);
+  margin-block-end: var(--space-2xl);
+}
+
+.font-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.font-card__sample {
+  font-size: var(--fs-3xl);
+  line-height: 1;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.font-card__name {
+  font-weight: var(--fw-semibold);
+}
+
+.font-card__chars {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  overflow-wrap: anywhere;
+}
+
+.type-scale {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.type-row {
+  display: grid;
+  gap: var(--space-xs) var(--space-xl);
+  padding: var(--space-lg);
+  min-inline-size: 0;
+}
+
+.type-row + .type-row {
+  border-block-start: var(--border-subtle);
+}
+
+.type-row__label {
+  display: grid;
+  gap: var(--space-2xs);
+  font-size: var(--fs-sm);
+}
+
+.type-row__label code {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.type-row__sample {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 48rem) {
+  .type-row {
+    grid-template-columns: 13rem minmax(0, 1fr);
+    align-items: center;
+  }
+}
+
+/* ---------- Espaciado ---------- */
+.space-scale {
+  display: grid;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.space-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  align-items: center;
+  gap: var(--space-2xs) var(--space-md);
+  font-size: var(--fs-sm);
+}
+
+.space-row__token {
+  color: var(--color-text);
+}
+
+.space-row__value {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+}
+
+.space-bar {
+  block-size: var(--space-md);
+  border-radius: var(--radius-sm);
+  background: var(--gradient-border);
+  box-shadow: var(--shadow-glow);
+}
+
+.space-row__use {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+@media (min-width: 48rem) {
+  .space-row {
+    grid-template-columns: 8rem 9rem 7rem 1fr;
+  }
+}
+
+/* ---------- Bordes, radios y sombras ---------- */
+.sample-grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+  gap: var(--space-md);
+}
+
+.sample-card {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--fs-sm);
+}
+
+.sample-card .text-muted {
+  font-size: var(--fs-xs);
+}
+
+.radius-sample,
+.shadow-sample,
+.border-sample {
+  display: block;
+  inline-size: 4.5rem;
+  block-size: 3.5rem;
+  margin-block-end: var(--space-xs);
+  background: var(--color-surface-raised);
+}
+
+.radius-sample {
+  border: var(--border-width) solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+
+.shadow-sample {
+  border-radius: var(--radius-md);
+}
+
+.border-sample {
+  border-radius: var(--radius-md);
+}
+
+.border-sample--subtle {
+  border: var(--border-subtle);
+}
+
+.border-sample--strong {
+  border: var(--border-strong);
+}
+
+/* ---------- Contenedores de demostración ---------- */
+.ds-components {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.ds-demo {
+  overflow: hidden;
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.ds-demo__header {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-lg);
+  border-block-end: var(--border-subtle);
+}
+
+.ds-demo__header h3 {
+  text-transform: uppercase;
+}
+
+.ds-demo__preview {
+  display: grid;
+  gap: var(--space-lg);
+  padding: clamp(var(--space-md), 4vw, var(--space-xl));
+  background: var(--color-background);
+}
+
+.ds-demo__code {
+  border-block-start: var(--border-subtle);
+}
+
+.ds-demo__code summary {
+  padding: var(--space-sm) var(--space-lg);
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ds-demo__code summary:hover {
+  color: var(--color-text);
+}
+
+.code-block {
+  max-block-size: 26rem;
+  margin: 0;
+  padding: var(--space-lg);
+  overflow: auto;
+  border-block-start: var(--border-subtle);
+  background: var(--color-background);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  line-height: 1.7;
+  tab-size: 2;
+}
+
+.ds-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.ds-stack {
+  display: grid;
+  align-content: start;
+  gap: var(--space-md);
+}
+
+.ds-narrow {
+  max-inline-size: 30rem;
+}
+
+.ds-card-demo {
+  display: grid;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (min-width: 48rem) {
+  .ds-card-demo {
+    grid-template-columns: minmax(0, 22rem) minmax(0, 1fr);
+  }
+}
+
+.ds-navbar-demo {
+  max-inline-size: 16rem;
+}
+
+/* ---------- Logotipo ---------- */
+.logo-demo {
+  display: grid;
+  gap: var(--space-lg);
+  justify-items: start;
+}
+
+.logo-demo__sizes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-lg) var(--space-xl);
+}
+
+.logo-demo__sizes li {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-xs);
+}
+
+.logo-demo__sizes code {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+/* ---------- Íconos ---------- */
+.icon-grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: var(--space-xs);
+}
+
+.icon-grid__item {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-xs);
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+}
+
+.icon-grid__item code {
+  color: var(--color-text-muted);
+  font-size: var(--fs-2xs);
+}
+
+/* ---------- Tabla de breakpoints ---------- */
+.table-wrap {
+  overflow-x: auto;
+  padding: 0;
+}
+
+.ds-table {
+  inline-size: 100%;
+  min-inline-size: 34rem;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  text-align: start;
+}
+
+.ds-table th,
+.ds-table td {
+  padding: var(--space-md) var(--space-lg);
+  border-block-end: var(--border-subtle);
+  text-align: start;
+  vertical-align: top;
+}
+
+.ds-table th {
+  color: var(--color-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.ds-table tbody tr:last-child td {
+  border-block-end: 0;
+}
+
+.ds-table td:not(:first-child) {
+  color: var(--color-text-muted);
+}
+
+/* ---------- Muestras de color (una clase por token) ---------- */
+.swatch__color--primary {
+  background: var(--color-primary);
+}
+
+.swatch__color--primary-strong {
+  background: var(--color-primary-strong);
+}
+
+.swatch__color--secondary {
+  background: var(--color-secondary);
+}
+
+.swatch__color--accent {
+  background: var(--color-accent);
+}
+
+.swatch__color--background {
+  background: var(--color-background);
+}
+
+.swatch__color--surface {
+  background: var(--color-surface);
+}
+
+.swatch__color--surface-raised {
+  background: var(--color-surface-raised);
+}
+
+.swatch__color--border {
+  background: var(--color-border);
+}
+
+.swatch__color--border-strong {
+  background: var(--color-border-strong);
+}
+
+.swatch__color--text {
+  background: var(--color-text);
+}
+
+.swatch__color--text-muted {
+  background: var(--color-text-muted);
+}
+
+.swatch__color--text-on-primary {
+  background: var(--color-text-on-primary);
+}
+
+.swatch__color--success {
+  background: var(--color-success);
+}
+
+.swatch__color--warning {
+  background: var(--color-warning);
+}
+
+.swatch__color--danger {
+  background: var(--color-danger);
+}
+
+.swatch__color--gradient-brand {
+  background: var(--gradient-brand);
+}
+
+.swatch__color--gradient-border {
+  background: var(--gradient-border);
+}
+
+/* ---------- Escala de espaciado ---------- */
+.space-bar--2xs {
+  inline-size: var(--space-2xs);
+}
+
+.space-bar--xs {
+  inline-size: var(--space-xs);
+}
+
+.space-bar--sm {
+  inline-size: var(--space-sm);
+}
+
+.space-bar--md {
+  inline-size: var(--space-md);
+}
+
+.space-bar--lg {
+  inline-size: var(--space-lg);
+}
+
+.space-bar--xl {
+  inline-size: var(--space-xl);
+}
+
+.space-bar--2xl {
+  inline-size: var(--space-2xl);
+}
+
+.space-bar--3xl {
+  inline-size: var(--space-3xl);
+}
+
+.space-bar--4xl {
+  inline-size: var(--space-4xl);
+}
+
+/* ---------- Radios ---------- */
+.radius-sample--sm {
+  border-radius: var(--radius-sm);
+}
+
+.radius-sample--md {
+  border-radius: var(--radius-md);
+}
+
+.radius-sample--lg {
+  border-radius: var(--radius-lg);
+}
+
+.radius-sample--pill {
+  border-radius: var(--radius-pill);
+}
+
+/* ---------- Sombras ---------- */
+.shadow-sample--sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-sample--card {
+  box-shadow: var(--shadow-card);
+}
+
+.shadow-sample--glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.shadow-sample--glow-accent {
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.shadow-sample--focus {
+  box-shadow: var(--shadow-focus);
+}
+
+.shadow-sample--figure {
+  box-shadow: var(--shadow-figure);
+}
