@@ -34,19 +34,14 @@ body {
     color var(--duration-base) var(--ease-out);
 }
 
-/* Fondo decorativo: retícula + brillos (no afecta al contenido) */
+/* Fondo decorativo: brillos suaves (no afecta al contenido) */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    var(--gradient-glow-1),
-    var(--gradient-glow-2),
-    linear-gradient(var(--grid-line) var(--border-width), transparent var(--border-width)),
-    linear-gradient(90deg, var(--grid-line) var(--border-width), transparent var(--border-width));
-  background-size: auto, auto, var(--space-4xl) var(--space-4xl), var(--space-4xl) var(--space-4xl);
+  background-image: var(--gradient-glow-1), var(--gradient-glow-2);
 }
 
 img,
