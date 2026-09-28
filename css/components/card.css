@@ -74,30 +74,10 @@
   line-height: var(--lh-snug);
 }
 
+/* Una sola oración: el detalle (problema, solución…) vive en el modal */
 .card-project__desc {
   color: var(--color-text-muted);
   font-size: var(--fs-sm);
-}
-
-/* Bloque "Problema que resuelve" */
-.card-project__problem {
-  padding: var(--space-sm) var(--space-md);
-  border-inline-start: 2px solid var(--color-accent);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  background: color-mix(in srgb, var(--color-accent) 7%, transparent);
-  font-size: var(--fs-sm);
-}
-
-.card-project__problem dt {
-  color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-size: var(--fs-2xs);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-}
-
-.card-project__problem dd {
-  margin: 0;
 }
 
 .card-project__body .tag-list {

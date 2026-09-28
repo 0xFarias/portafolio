@@ -85,6 +85,13 @@
   font-size: var(--fs-xs);
 }
 
+/* Resumen ampliado del proyecto (en la card solo va una oración) */
+.modal__lead {
+  max-inline-size: 70ch;
+  color: var(--color-text);
+  font-size: var(--fs-base);
+}
+
 .modal__grid {
   display: grid;
   gap: var(--space-lg);

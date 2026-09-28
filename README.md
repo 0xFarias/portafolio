@@ -32,7 +32,7 @@ Portafolio web personal e interactivo de **Jose Luis Farias Valdez**, estudiante
 | **Inicio** | Nombre, perfil, propuesta de valor y llamadas a la acción. |
 | **Sobre mí** | Perfil profesional, formación, certificaciones (AWS Academy Cloud Foundations y curso de Python y Django en Udemy), intereses e idiomas. |
 | **Habilidades** | Cinco categorías (Backend y programación, Bases de datos, IA y visión por computador, Frontend, Cloud y herramientas) en tarjetas con el logo de cada tecnología y su nivel; la evidencia de uso aparece como tooltip. |
-| **Proyectos** | Cuatro proyectos en cards reutilizables: descripción, problema que resuelven, tecnologías, imagen y enlaces. |
+| **Proyectos** | Cuatro proyectos en cards reutilizables y compactas: imagen, estado, título, una oración de resumen, tecnologías y enlaces. El detalle completo se abre en un modal. |
 | **Design System / Componentes** | Página propia ([design-system.html](design-system.html)) con colores, tipografía, espaciado, bordes, sombras, logotipo y componentes. |
 | **Contacto** | Datos de contacto profesional y formulario con validación. |
 
@@ -67,7 +67,7 @@ Portafolio web personal e interactivo de **Jose Luis Farias Valdez**, estudiante
 | `js/modules/mobile-menu.js` | Menú responsive | Panel desplegable en móvil/tablet; se cierra con Escape, al elegir un enlace o al tocar fuera. |
 | `js/modules/scroll-spy.js` | Navegación dinámica | Resalta la sección visible en la barra lateral y en los puntos de la derecha. |
 | `js/modules/project-filter.js` | Filtro de proyectos por tecnología | Muestra cuántos proyectos usan cada tecnología y anuncia el resultado a lectores de pantalla. |
-| `js/modules/project-modal.js` | Modal de proyectos | Abre el caso completo (problema, solución, características, rol) desde el `<template>` de cada card. |
+| `js/modules/project-modal.js` | Modal de proyectos | Abre el caso completo (resumen, problema, solución, características, aprendizajes y rol) desde el `<template>` de cada card. |
 | `js/modules/contact-form.js` | Validación del formulario | Mensajes claros por campo, contador de caracteres y envío mediante el cliente de correo. |
 | `js/modules/reveal-on-scroll.js` | Animaciones controladas | Aparición suave al hacer scroll; se desactiva si el sistema pide reducir el movimiento. |
 | `js/modules/back-to-top.js` | Volver al inicio | Botón flotante que aparece tras desplazarse. |
@@ -175,6 +175,7 @@ El portafolio se construyó por etapas, con un commit por cada avance:
 12. Fondo liso: se quita la cuadrícula decorativa.
 13. Documentación final, capturas y publicación en GitHub Pages.
 14. Habilidades en tarjetas compactas con logos y descripción en tooltip.
+15. Proyectos: tarjetas más limpias (una oración de resumen); el problema y la descripción completa pasan al modal.
 
 ## Accesibilidad
 
