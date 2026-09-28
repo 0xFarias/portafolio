@@ -254,7 +254,7 @@
           <div class="section-header__text">
             <p class="eyebrow">Stack técnico</p>
             <h2 id="skills-title">Habilidades</h2>
-            <p>Cada nivel está respaldado por un proyecto o práctica concreta que puedo explicar.</p>
+            <p>Cada nivel está respaldado por un proyecto o práctica concreta. Pasa el cursor (o toca) una habilidad para ver dónde la he usado.</p>
           </div>
           <ul class="level-legend">
             <li>
@@ -288,8 +288,8 @@
               <h3 class="skill-group__title" id="skills-backend">Backend y programación</h3>
             </header>
             <ul class="skill-list">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">PY</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-python-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/python.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">Python</h4>
@@ -298,11 +298,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.</p>
+                  <p class="skill__desc" id="skill-python-desc" role="tooltip">Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">DJ</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-django-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/django.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">Django</h4>
@@ -311,11 +311,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Modelos, vistas, plantillas, sesiones, permisos y CRUD completos (AttentionDoctor y Tracker IA). Certificado de Udemy.</p>
+                  <p class="skill__desc" id="skill-django-desc" role="tooltip">Modelos, vistas, plantillas, sesiones, permisos y CRUD completos (AttentionDoctor y Tracker IA). Certificado de Udemy.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">PHP</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-php-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/php.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">PHP</h4>
@@ -324,11 +324,11 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Backend de AgendaValoraciones.</p>
+                  <p class="skill__desc" id="skill-php-desc" role="tooltip">Backend de AgendaValoraciones.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">API</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-fastapi-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/fastapi.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">FastAPI</h4>
@@ -337,7 +337,7 @@
                       <span class="level__label">Aprendiendo</span>
                     </p>
                   </div>
-                  <p class="skill__desc">API de inferencia de CocoaAnalyzer.</p>
+                  <p class="skill__desc" id="skill-fastapi-desc" role="tooltip">API de inferencia de CocoaAnalyzer.</p>
                 </div>
               </li>
             </ul>
@@ -349,8 +349,8 @@
               <h3 class="skill-group__title" id="skills-datos">Bases de datos</h3>
             </header>
             <ul class="skill-list">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">SQL</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-sql-server-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/sqlserver.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">SQL Server</h4>
@@ -359,11 +359,11 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Consultas, relaciones entre tablas y diseño de CRUD.</p>
+                  <p class="skill__desc" id="skill-sql-server-desc" role="tooltip">Consultas, relaciones entre tablas y diseño de CRUD.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">PG</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-postgresql-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/postgresql.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">PostgreSQL</h4>
@@ -372,20 +372,7 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Base de datos de AttentionDoctor, conectada desde Django.</p>
-                </div>
-              </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">MY</span>
-                <div class="skill__body">
-                  <div class="skill__head">
-                    <h4 class="skill__name">MySQL</h4>
-                    <p class="level" data-level="1">
-                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
-                      <span class="level__label">Básico</span>
-                    </p>
-                  </div>
-                  <p class="skill__desc">Base de datos de AgendaValoraciones.</p>
+                  <p class="skill__desc" id="skill-postgresql-desc" role="tooltip">Base de datos de AttentionDoctor, conectada desde Django.</p>
                 </div>
               </li>
             </ul>
@@ -397,8 +384,8 @@
               <h3 class="skill-group__title" id="skills-ia">IA y visión por computador</h3>
             </header>
             <ul class="skill-list">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">CV</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-opencv-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/opencv.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">OpenCV</h4>
@@ -407,11 +394,11 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Captura y procesamiento de video en tiempo real (Tracker IA).</p>
+                  <p class="skill__desc" id="skill-opencv-desc" role="tooltip">Captura y procesamiento de video en tiempo real (Tracker IA).</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">YO</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-yolo-ultralytics-desc">
+                <span class="skill__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scan-eye"></use></svg></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">YOLO (Ultralytics)</h4>
@@ -420,11 +407,11 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">YOLOv8 en Tracker IA y YOLOv11 en CocoaAnalyzer.</p>
+                  <p class="skill__desc" id="skill-yolo-ultralytics-desc" role="tooltip">YOLOv8 en Tracker IA y YOLOv11 en CocoaAnalyzer.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">ML</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-entrenamiento-de-modelos-desc">
+                <span class="skill__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkles"></use></svg></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">Entrenamiento de modelos</h4>
@@ -433,7 +420,7 @@
                       <span class="level__label">Aprendiendo</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Modelo personalizado para detectar el casco y datasets gestionados en Roboflow.</p>
+                  <p class="skill__desc" id="skill-entrenamiento-de-modelos-desc" role="tooltip">Modelo personalizado para detectar el casco y datasets gestionados en Roboflow.</p>
                 </div>
               </li>
             </ul>
@@ -445,8 +432,8 @@
               <h3 class="skill-group__title" id="skills-frontend">Frontend</h3>
             </header>
             <ul class="skill-list">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">HTML</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-html5-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/html5.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">HTML5</h4>
@@ -455,11 +442,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Estructura semántica, formularios y plantillas de Django.</p>
+                  <p class="skill__desc" id="skill-html5-desc" role="tooltip">Estructura semántica, formularios y plantillas de Django.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">CSS</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-css3-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/css3.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">CSS3</h4>
@@ -468,11 +455,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Flexbox, Grid, custom properties y diseño responsive; Tailwind CSS y Bootstrap.</p>
+                  <p class="skill__desc" id="skill-css3-desc" role="tooltip">Flexbox, Grid, custom properties y diseño responsive; Tailwind CSS y Bootstrap.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">JS</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-javascript-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/javascript.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">JavaScript</h4>
@@ -481,7 +468,20 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">DOM, eventos y validación de formularios.</p>
+                  <p class="skill__desc" id="skill-javascript-desc" role="tooltip">DOM, eventos y validación de formularios.</p>
+                </div>
+              </li>
+              <li class="skill" tabindex="0" aria-describedby="skill-react-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/react.svg" alt="" width="28" height="28" loading="lazy"></span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">React</h4>
+                    <p class="level" data-level="0">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Aprendiendo</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc" id="skill-react-desc" role="tooltip">Fundamentos de componentes, props y estado; en formación.</p>
                 </div>
               </li>
             </ul>
@@ -493,8 +493,8 @@
               <h3 class="skill-group__title" id="skills-cloud">Cloud y herramientas</h3>
             </header>
             <ul class="skill-list">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">GIT</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-git-y-github-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/git.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">Git y GitHub</h4>
@@ -503,11 +503,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Control de versiones de mis proyectos y publicación con GitHub Pages.</p>
+                  <p class="skill__desc" id="skill-git-y-github-desc" role="tooltip">Control de versiones de mis proyectos y publicación con GitHub Pages.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">AWS</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-aws-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/aws.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">AWS</h4>
@@ -516,33 +516,20 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Certificación AWS Academy Cloud Foundations; Amazon S3 en Tracker IA.</p>
+                  <p class="skill__desc" id="skill-aws-desc" role="tooltip">Certificación AWS Academy Cloud Foundations; Amazon S3 en Tracker IA.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">{ }</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-jira-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/jira.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
-                    <h4 class="skill__name">JSON</h4>
+                    <h4 class="skill__name">Jira</h4>
                     <p class="level" data-level="2">
                       <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Lectura y escritura de datos estructurados entre servicios.</p>
-                </div>
-              </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">NET</span>
-                <div class="skill__body">
-                  <div class="skill__head">
-                    <h4 class="skill__name">Redes de datos</h4>
-                    <p class="level" data-level="1">
-                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
-                      <span class="level__label">Básico</span>
-                    </p>
-                  </div>
-                  <p class="skill__desc">Fundamentos de redes y comunicación entre equipos.</p>
+                  <p class="skill__desc" id="skill-jira-desc" role="tooltip">Organización de tareas, historias de usuario y sprints en tableros ágiles.</p>
                 </div>
               </li>
             </ul>

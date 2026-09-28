@@ -31,7 +31,7 @@ Portafolio web personal e interactivo de **Jose Luis Farias Valdez**, estudiante
 | --- | --- |
 | **Inicio** | Nombre, perfil, propuesta de valor y llamadas a la acción. |
 | **Sobre mí** | Perfil profesional, formación, certificaciones (AWS Academy Cloud Foundations y curso de Python y Django en Udemy), intereses e idiomas. |
-| **Habilidades** | Cinco categorías (Backend y programación, Bases de datos, IA y visión por computador, Frontend, Cloud y herramientas) con nivel de dominio y evidencia de uso. |
+| **Habilidades** | Cinco categorías (Backend y programación, Bases de datos, IA y visión por computador, Frontend, Cloud y herramientas) en tarjetas con el logo de cada tecnología y su nivel; la evidencia de uso aparece como tooltip. |
 | **Proyectos** | Cuatro proyectos en cards reutilizables: descripción, problema que resuelven, tecnologías, imagen y enlaces. |
 | **Design System / Componentes** | Página propia ([design-system.html](design-system.html)) con colores, tipografía, espaciado, bordes, sombras, logotipo y componentes. |
 | **Contacto** | Datos de contacto profesional y formulario con validación. |
@@ -93,6 +93,7 @@ portafolio/
 ├── assets/
 │   ├── fonts/                 # woff2 autoalojadas + licencia
 │   ├── icons/favicon.svg      # logotipo de una tecla (se adapta al tema del sistema)
+│   ├── icons/tech/            # logos de tecnologías (Devicon) para Habilidades
 │   └── img/                   # fotografía de perfil, imagen para redes e ilustraciones de los proyectos
 └── docs/capturas/             # capturas usadas en este README
 ```
@@ -173,6 +174,7 @@ El portafolio se construyó por etapas, con un commit por cada avance:
 11. Fotografía profesional sin fondo que sobresale del marco (reemplaza al avatar ilustrado).
 12. Fondo liso: se quita la cuadrícula decorativa.
 13. Documentación final, capturas y publicación en GitHub Pages.
+14. Habilidades en tarjetas compactas con logos y descripción en tooltip.
 
 ## Accesibilidad
 
@@ -187,5 +189,6 @@ El portafolio se construyó por etapas, con un commit por cada avance:
 - Diseño y desarrollo: **Jose Luis Farias Valdez**.
 - Fuentes: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed), [Outfit](https://fonts.google.com/specimen/Outfit) y [JetBrains Mono](https://www.jetbrains.com/lp/mono/), bajo SIL Open Font License 1.1.
 - Íconos e ilustraciones: SVG propios del proyecto.
+- Logos de tecnologías en Habilidades: [Devicon](https://devicon.dev/) (licencia MIT). Cada marca pertenece a su propietario.
 
 Asignatura: **Desarrollo Web** — Ingeniería de Software, UNEMI.

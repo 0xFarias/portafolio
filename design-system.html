@@ -775,13 +775,13 @@
 
         <article class="ds-demo" id="comp-skill" aria-labelledby="comp-skill-title">
           <header class="ds-demo__header">
-            <h3 id="comp-skill-title">Skill</h3>
-            <p class="text-muted">Ítem de habilidad con monograma, nivel de dominio (texto + indicador) y evidencia de uso.</p>
+            <h3 id="comp-skill-title">Skill con tooltip</h3>
+            <p class="text-muted">Tarjeta con logo, nombre y nivel. La evidencia de uso aparece como tooltip al pasar el cursor, al enfocar con Tab o al tocar la tarjeta. Pasa el cursor sobre ellas.</p>
           </header>
           <div class="ds-demo__preview">
-            <ul class="skill-list ds-narrow">
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">PY</span>
+            <ul class="skill-list ds-narrow ds-skill-demo">
+              <li class="skill" tabindex="0" aria-describedby="skill-python-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/python.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">Python</h4>
@@ -790,11 +790,11 @@
                       <span class="level__label">Intermedio</span>
                     </p>
                   </div>
-                  <p class="skill__desc">Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.</p>
+                  <p class="skill__desc" id="skill-python-desc" role="tooltip">Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">JS</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-javascript-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/javascript.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
                     <h4 class="skill__name">JavaScript</h4>
@@ -803,28 +803,41 @@
                       <span class="level__label">Básico</span>
                     </p>
                   </div>
-                  <p class="skill__desc">DOM, eventos y validación de formularios.</p>
+                  <p class="skill__desc" id="skill-javascript-desc" role="tooltip">DOM, eventos y validación de formularios.</p>
                 </div>
               </li>
-              <li class="skill">
-                <span class="skill__icon" aria-hidden="true">API</span>
+              <li class="skill" tabindex="0" aria-describedby="skill-react-desc">
+                <span class="skill__icon" aria-hidden="true"><img src="assets/icons/tech/react.svg" alt="" width="28" height="28" loading="lazy"></span>
                 <div class="skill__body">
                   <div class="skill__head">
-                    <h4 class="skill__name">FastAPI</h4>
+                    <h4 class="skill__name">React</h4>
                     <p class="level" data-level="0">
                       <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
                       <span class="level__label">Aprendiendo</span>
                     </p>
                   </div>
-                  <p class="skill__desc">API de inferencia de CocoaAnalyzer.</p>
+                  <p class="skill__desc" id="skill-react-desc" role="tooltip">Fundamentos de componentes, props y estado; en formación.</p>
+                </div>
+              </li>
+              <li class="skill" tabindex="0" aria-describedby="skill-yolo-ultralytics-desc">
+                <span class="skill__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scan-eye"></use></svg></span>
+                <div class="skill__body">
+                  <div class="skill__head">
+                    <h4 class="skill__name">YOLO (Ultralytics)</h4>
+                    <p class="level" data-level="1">
+                      <span class="level__bar" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span class="level__label">Básico</span>
+                    </p>
+                  </div>
+                  <p class="skill__desc" id="skill-yolo-ultralytics-desc" role="tooltip">YOLOv8 en Tracker IA y YOLOv11 en CocoaAnalyzer.</p>
                 </div>
               </li>
             </ul>
           </div>
           <details class="ds-demo__code">
             <summary>Ver código HTML</summary>
-            <pre class="code-block"><code>&lt;li class=&quot;skill&quot;&gt;
-            &lt;span class=&quot;skill__icon&quot; aria-hidden=&quot;true&quot;&gt;PY&lt;/span&gt;
+            <pre class="code-block"><code>&lt;li class=&quot;skill&quot; tabindex=&quot;0&quot; aria-describedby=&quot;skill-python-desc&quot;&gt;
+            &lt;span class=&quot;skill__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;img src=&quot;assets/icons/tech/python.svg&quot; alt=&quot;&quot; width=&quot;28&quot; height=&quot;28&quot; loading=&quot;lazy&quot;&gt;&lt;/span&gt;
             &lt;div class=&quot;skill__body&quot;&gt;
               &lt;div class=&quot;skill__head&quot;&gt;
                 &lt;h4 class=&quot;skill__name&quot;&gt;Python&lt;/h4&gt;
@@ -833,11 +846,13 @@
                   &lt;span class=&quot;level__label&quot;&gt;Intermedio&lt;/span&gt;
                 &lt;/p&gt;
               &lt;/div&gt;
-              &lt;p class=&quot;skill__desc&quot;&gt;Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.&lt;/p&gt;
+              &lt;p class=&quot;skill__desc&quot; id=&quot;skill-python-desc&quot; role=&quot;tooltip&quot;&gt;Estructuras de datos, lógica y POO. Es el lenguaje principal de mis proyectos.&lt;/p&gt;
             &lt;/div&gt;
           &lt;/li&gt;
 
-          &lt;!-- data-level: 0 = Aprendiendo · 1 = Básico · 2 = Intermedio · 3 = Avanzado --&gt;</code></pre>
+          &lt;!-- data-level: 0 = Aprendiendo · 1 = Básico · 2 = Intermedio · 3 = Avanzado
+               El tooltip (.skill__desc) aparece con :hover o :focus (Tab o toque).
+               Sin logo adecuado: &lt;span class=&quot;skill__icon&quot;&gt;&lt;svg class=&quot;icon&quot;&gt;&lt;use href=&quot;#i-scan-eye&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt; --&gt;</code></pre>
           </details>
         </article>
 

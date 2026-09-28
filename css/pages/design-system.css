@@ -388,6 +388,11 @@
   max-inline-size: 30rem;
 }
 
+/* Espacio arriba para que el tooltip de las skills no tape el encabezado del ejemplo */
+.ds-skill-demo {
+  padding-block-start: var(--space-4xl);
+}
+
 .ds-card-demo {
   display: grid;
   gap: var(--space-lg);
