@@ -79,8 +79,12 @@
   padding-block-start: var(--space-xs);
 }
 
-/* ---------- Fotografía con marco luminoso ---------- */
+/* ---------- Fotografía que sobresale del marco ----------
+   La foto no tiene fondo (PNG/WebP transparente). El marco cuadrado ocupa
+   la parte de abajo de .hero__media y la cabeza queda por encima de él. */
 .hero__figure {
+  --pop: 13.8%;   /* parte de la figura que queda por encima del marco */
+
   position: relative;
   justify-self: center;
   inline-size: min(var(--hero-figure-width), 82%);
@@ -90,7 +94,7 @@
 .hero__figure::before {
   content: "";
   position: absolute;
-  inset: calc(-1 * var(--space-md));
+  inset: calc(var(--pop) - var(--space-md)) calc(-1 * var(--space-md)) calc(-1 * var(--space-md));
   z-index: -1;
   border: 1.5px solid transparent;
   border-image: var(--gradient-border) 1;
@@ -109,12 +113,33 @@
   box-shadow: var(--shadow-glow-accent);
 }
 
-.hero__photo {
-  inline-size: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+/* Escenario: cuadrado + la altura extra para la cabeza. Recorta solo los lados. */
+.hero__media {
+  position: relative;
+  aspect-ratio: 100 / 116;
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+/* Fondo del marco (detrás de la foto) */
+.hero__media::before {
+  content: "";
+  position: absolute;
+  inset: var(--pop) 0 0;
   border-radius: var(--radius-sm);
-  background: var(--color-surface-raised);
+  background:
+    radial-gradient(65% 55% at 50% 38%, color-mix(in srgb, var(--color-primary) 55%, transparent), transparent 75%),
+    linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 18%, var(--color-surface-raised)), var(--color-surface-raised) 70%);
+}
+
+.hero__photo {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 50%;
+  block-size: 100%;
+  inline-size: auto;
+  max-inline-size: none;
+  transform: translateX(-50%);
 }
 
 .hero__badge {
